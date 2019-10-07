@@ -1,0 +1,55 @@
+@media only screen and (max-width: 600px) {
+	.header_top_button {
+   display: none;
+}
+.header_top_button_mobile {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    display: block;
+}
+.header-logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.open_nave_btn {
+    /*position: absolute;
+    left: 8px;
+    top: 0;*/
+}
+}
+
+@media screen and (max-height: 450px) {
+  .main_menu .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+	.mobile_menu_down_icon {
+		display: block;
+	}
+	.menu_single_item {
+    display: none;
+}
+.menu_single_heading {
+    border-bottom: 1px dotted #ccc;
+    padding: 5px 0px;
+}
+.menu_single_heading > h2 {
+    font-size: 23px;
+}
+.overlay-content > h1 {
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+    padding: 0px;
+}
+.main_menu .overlay .closebtn {
+    right: 3px;
+    font-size: 41px;
+}
+
+}
