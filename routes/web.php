@@ -14,10 +14,8 @@
 Route::get('/', 'SiteController@index')->name('home');
 Route::get('/category/{category}/posts', 'SiteController@categoryProducts')->name('category.products');
 Route::get('/sub-category/{subCategory}/posts', 'SiteController@subCategoryProducts')->name('subCategory.products');
-Route::get('/categories/tur-advertencia/posts', 'SiteController@allCategoryProducts')->name('all.category.products');
 
-//
-Route::get('/filer/{category?}/{sub-category?}', 'SiteController@filerPosts')->name('filter.posts');
+Route::get('/filer', 'SiteController@filerPosts')->name('filter.posts');
 
 
 Route::get('/post/create', 'PostController@create')->name('post.create');

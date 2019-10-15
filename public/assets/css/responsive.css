@@ -229,6 +229,12 @@
         margin-top: 2px;
         margin: 1px;
     }
+
+    .shorting-items select {
+        margin: 0px;
+        max-width: 103px;
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 400px) {

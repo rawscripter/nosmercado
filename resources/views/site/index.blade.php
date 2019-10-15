@@ -7,71 +7,10 @@
         <!-- shorting option markup -->
         <div class="shadow bg-white rounded-0 mt-0">
             <div class="shorting_area">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="shorting-menu">
-                            <div class="container">
-                                <ul class="short-ul">
-                                    <li class="short-li"><a href="#"><span disable>Sorteer: </span>Newest <i
-                                                    class="fas fa-angle-down"></i><i
-                                                    class="fas fa-angle-up short_up"></i></a>
-                                        <ul>
-                                            <li><a href="?short=newest">Newest</a></li>
-                                            <li><a href="?short=oldest">Oldest</a></li>
-                                            <li><a href="?short=most-viewed">Most Viewed</a></li>
-                                            <li><a href="?short=price-high-to-low">Price High to Low</a></li>
-                                            <li><a href="?short=price-low-to-high">Price Low to High</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <span
-                                                    class="text">{{isset($shortedSubCategory) ? $shortedSubCategory->name : "Sub-categoria"}}</span>
-                                            <i class="fas fa-angle-down"></i><i
-                                                    class="fas fa-angle-up margin-6px cat_up"></i>
-                                        </a>
-                                        <ul class="left-on-desktop">
-                                            @php
-                                                if(isset($shortCategory)) {
-                                                $subCategories = $shortCategory->subCategories;
-                                                }
-                                                if(isset($allSubCategories)) {
-                                                    $subCategories = $allSubCategories;
-                                                }
-                                            @endphp
-                                            @if(!empty($subCategories))
-                                                @foreach($subCategories  as $subCategory)
-                                                    <li>
-                                                        <a href="{{route('subCategory.products',$subCategory->slug)}}">{{$subCategory->name}}</a>
-                                                    </li>
-                                                @endforeach
-                                            @endif
-
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            {{isset($shortCategory) ? $shortCategory->name  : "Categoria"}}
-                                            <i
-                                                    class="fas fa-angle-down"></i><i
-                                                    class="fas fa-angle-up cat_up"></i></a>
-                                        <ul class="left-on-desktop">
-                                            @foreach($categories as $category)
-                                                <li>
-                                                    <a href="{{route('category.products',$category->slug)}}">{{$category->name}}</a>
-                                                </li>
-                                            @endforeach
-                                            <li><a href="{{route('all.category.products')}}">Tur advertencia</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @include('layout.short')
             </div>
         </div>
         <!--end shorting option markup -->
-
 
         <div class="container">
             <div class="col-md-12 col-lg-12">

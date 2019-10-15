@@ -22,60 +22,24 @@ class SiteController extends Controller
             ->orderBy(DB::raw('RAND()'))
             ->paginate($this->paginateItem);
 
-        if (isset($_GET['short'])) {
-            if ($_GET['short'] == 'most-viewed') {
-                $table = 'clicks';
-                $short = 'desc';
-            } else if ($_GET['short'] == 'newest') {
-                $table = 'created_at';
-                $short = 'desc';
-            } else if ($_GET['short'] == 'price-high-to-low') {
-                $table = 'price';
-                $short = 'desc';
-            } else if ($_GET['short'] == 'price-low-to-high') {
-                $table = 'price';
-                $short = 'asc';
-            } else {
-                $table = 'created_at';
-                $short = 'asc';
-            };
-
-
-            $posts = Post
-                ::where('expire_date', '>=', Carbon::now())
-                ->orderBy($table, $short)
-                ->orderBy(DB::raw('RAND()'))
-                ->paginate(20);
-        }
-
-
         return view('site.index', compact('posts', 'categories'));
     }
 
     public function categoryProducts($category)
     {
-
         $categories = Category::orderBy('id', 'asc')->get();
         $category = Category::whereSlug($category)->first();
-
         $posts = Post
             ::where('expire_date', '>=', Carbon::now())
             ->where('category_id', $category->id)
             ->orderBy(DB::raw('RAND()'))
             ->paginate($this->paginateItem);
 
-        if (isset($_GET['short'])) {
-            $short = $_GET['short'];
-            $posts = $category->categoryPostsByShorted($short, $this->paginateItem);
-        }
-
-        $shortCategory = $category;
-        return view('site.index', compact('posts', 'categories', 'shortCategory'));
+        return view('site.index', compact('posts', 'categories'));
     }
 
     public function subCategoryProducts($subCategory)
     {
-
         $categories = Category::orderBy('id', 'asc')->get();
         $subCategory = SubCategory::whereSlug($subCategory)->first();
         $posts = Post
@@ -84,33 +48,115 @@ class SiteController extends Controller
             ->orderBy(DB::raw('RAND()'))
             ->paginate($this->paginateItem);
 
-
-        if (isset($_GET['short'])) {
-            $short = $_GET['short'];
-            $posts = $subCategory->subCategoryPostsByShorted($short, $this->paginateItem);
-        }
-
         return view('site.index', compact('posts', 'categories'));
     }
 
-    public function allCategoryProducts()
+    public function filerPosts(Request $request)
     {
-        $posts = Post
-            ::where('expire_date', '>=', Carbon::now())
-            ->orderBy(DB::raw('RAND()'))
-            ->paginate($this->paginateItem);
-
         $categories = Category::orderBy('id', 'asc')->get();
-        $allSubCategories = SubCategory::orderBy('id', 'asc')->get();
-        return view('site.index', compact('posts', 'categories', 'allSubCategories'));
+        if (!empty($request->subcategory)) {
+            $subCategory = SubCategory::whereSlug($request->subcategory)->first();
+            $filterSubCategory = $this->filterAbleSubCategories($request->category);
+            $posts = Post
+                ::where('expire_date', '>=', Carbon::now())
+                ->where('sub_category_id', $subCategory->id)
+                ->orderBy(DB::raw('RAND()'))
+                ->paginate($this->paginateItem);
+
+            if (isset($_GET['short']) && !empty($_GET['short'])) {
+                $short = $this->getShortAbleColumnAndOrder();
+                $posts = Post
+                    ::where('expire_date', '>=', Carbon::now())
+                    ->where('sub_category_id', $subCategory->id)
+                    ->orderBy($short['column'], $short['order'])
+                    ->paginate($this->paginateItem);
+            }
+            return view('site.index', compact('posts', 'categories', 'filterSubCategory'));
+        }
+
+        if (!empty($request->category)) {
+            if ($request->category == 'tur-advertencia') {
+                $filterSubCategory = $this->filterAbleSubCategories($request->category);
+                $posts = Post
+                    ::where('expire_date', '>=', Carbon::now())
+                    ->orderBy(DB::raw('RAND()'))
+                    ->paginate($this->paginateItem);
+
+                if (isset($_GET['short']) && !empty($_GET['short'])) {
+                    $short = $this->getShortAbleColumnAndOrder();
+                    $posts = Post
+                        ::where('expire_date', '>=', Carbon::now())
+                        ->orderBy($short['column'], $short['order'])
+                        ->paginate($this->paginateItem);
+                }
+
+            } else {
+                $category = Category::whereSlug($request->category)->first();
+                $filterSubCategory = $this->filterAbleSubCategories($request->category);
+                $posts = Post
+                    ::where('expire_date', '>=', Carbon::now())
+                    ->where('category_id', $category->id)
+                    ->orderBy(DB::raw('RAND()'))
+                    ->paginate($this->paginateItem);
+
+
+                if (isset($_GET['short']) && !empty($_GET['short'])) {
+                    $short = $this->getShortAbleColumnAndOrder();
+                    $posts = Post
+                        ::where('expire_date', '>=', Carbon::now())
+                        ->where('category_id', $category->id)
+                        ->orderBy($short['column'], $short['order'])
+                        ->paginate($this->paginateItem);
+                }
+            }
+        }
+
+        if (isset($_GET['short']) && !empty($_GET['short']) && empty($request->category)) {
+            $filterSubCategory = null;
+            $short = $this->getShortAbleColumnAndOrder();
+            $posts = Post
+                ::where('expire_date', '>=', Carbon::now())
+                ->orderBy($short['column'], $short['order'])
+                ->paginate($this->paginateItem);
+        }
+
+
+        return view('site.index', compact('posts', 'categories', 'filterSubCategory'));
     }
 
-    public function shortedPosts()
+    public function filterAbleSubCategories($category)
     {
-        if (isset($_GET['short'])) {
-            $short = $_GET['short'] == 'newest' ? 'desc' : 'asc';
-            return $posts = Post::where('expire_date', '>=', Carbon::now())->orderBy('created_at', $short)->get();
+        if (!empty($category)) {
+            if ($category == 'tur-advertencia') {
+                return $filterSubCategory = SubCategory::all();
+            } else {
+                $category = Category::whereSlug($category)->first();
+                return $category->subCategories;
+            }
         }
+        return '';
+    }
+
+    public function getShortAbleColumnAndOrder()
+    {
+        if ($_GET['short'] == 'most-viewed') {
+            $res['column'] = 'clicks';
+            $res['order'] = 'desc';
+        } else if ($_GET['short'] == 'newest') {
+            $res['column'] = 'created_at';
+            $res['order'] = 'desc';
+        } else if ($_GET['short'] == 'price-high-to-low') {
+            $res['column'] = 'price';
+            $res['order'] = 'desc';
+        } else if ($_GET['short'] == 'price-low-to-high') {
+            $res['columnv'] = 'price';
+            $res['order'] = 'asc';
+        } else {
+            $res['column'] = 'created_at';
+            $res['order'] = 'asc';
+        };
+
+        return $res;
     }
 
 

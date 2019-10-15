@@ -687,3 +687,10 @@ i.margin-6px.fas.fa-angle-up.cat_up {
     background-color: #2b62d9;
     border-color: #2b62d9;
 }
+
+.shorting-items select {
+    padding: 0px;
+    margin-right: 23px;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 2px;
+}
