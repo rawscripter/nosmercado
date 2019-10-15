@@ -15,6 +15,16 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('title', 55)->nullable();
+            $table->bigInteger('category_id')->nullable();
+            $table->bigInteger('subcategory_id')->nullable();
+            $table->float('price')->nullable();
+            $table->string('email', 55)->nullable();
+            $table->string('phone', 55)->nullable();
+            $table->text('description')->nullable();
+            $table->integer('clicks')->default(0);
+            $table->integer('status')->default(1);
+            $table->timestamp('expire_date')->nullable();
             $table->timestamps();
         });
     }

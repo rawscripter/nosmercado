@@ -1,0 +1,1 @@
+[14-Oct-2019 01:11:34 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 63700993 bytes) in /home4/lesan360/public_html/rawscripter/shortenurl.rawscripters.dev/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 83

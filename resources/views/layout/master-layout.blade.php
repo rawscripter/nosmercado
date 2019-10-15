@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Market Place</title>
+    <title>Nosmercado</title>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
@@ -15,31 +15,37 @@
     @yield('header')
 </head>
 <body>
-<div class="shadow bg-white rounded">
+<div class="bg-white rounded">
     <header class="header_area">
         <div class="header_top">
-            <div class="container-fluid">
+            <div id="no-padding" class="container-fluid">
                 <div class="row">
                     <div class="col-md-9 col-lg-9">
                         <div class="row">
-                            <div class="col-md-4 col-lg-4">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="menu_btn">
                                     <span class="open_nave_btn" onclick="openNav()">&#9776;</span>
                                 </div>
                                 <div class="header-logo">
-                                    <h4><a href="/">Marketplaats</a></h4>
+                                    <h4 class="text-center"><a href="/">
+                                            <img src="{{asset('images/logo.png')}}" id="logo" alt="Nosmercado">
+                                        </a></h4>
                                 </div>
                                 <div class="header_top_button_mobile">
-                                    <a href="{{route('post.create')}}" class="btn btn-primary rounded-0 btn-sm float-right mt-1 pl-3 pr-3"><i class="fas fa-thumbtack"></i></a>
+                                    <a href="{{route('post.create')}}"
+                                       class="btn btn-primary rounded-0 btn-sm float-right mt-1 pl-3 pr-3"><i
+                                                class="fas fa-thumbtack"></i></a>
                                 </div>
                             </div>
-                            <div class="col-md-8 col-lg-8">
+                            <div class="col-md-6 col-lg-8">
                                 <div class="main_search mt-0 mb-2">
                                     <form action="#">
                                         <div class="input-group">
-                                            <input type="text" class="form-control rounded-0" name="search_val" placeholder="Search for anything">
+                                            <input type="text" class="form-control rounded-0" name="search_val"
+                                                   placeholder="Busca advertencia..">
                                             <span class="input-group-btn">
-									<button type="submit" class="btn btn-primary rounded-0 pl-3 pr-3"><i class="fas fa-search"></i></button>
+									<button type="submit" class="btn btn-primary rounded-0 pl-3 pr-3"><i
+                                                class="fas fa-search"></i></button>
 								</span>
                                         </div>
                                     </form>
@@ -49,7 +55,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <div class="header_top_button">
-                            <a href="{{route('post.create')}}" class="btn btn-primary rounded-0 btn-sm float-right mt-1"><i class="fas fa-thumbtack"></i> Plaats advertentic</a>
+                            <a href="{{route('post.create')}}"
+                               class="btn btn-primary rounded-0 btn-sm float-right mt-1"><i
+                                        class="fas fa-thumbtack"></i> Publica advertencia</a>
                         </div>
                     </div>
                 </div>
@@ -59,66 +67,35 @@
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    <h1>Marketplaats</h1>
+                    <h1><img src="{{asset('images/logo.png')}}" id="menu_logo" alt="Nosmercado">
+                    </h1>
                     <div class="main_menu_item_area">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3">
-                                <div class="menu_single_row">
-                                    <div class="menu_single_heading">
-                                        <h2>For sell</h2>
-                                        <i class="fas fa-chevron-down mobile_menu_down_icon"></i>
-                                    </div>
-                                    <div class="menu_single_item">
-                                        <a href="result.php">cars</a>
-                                        <a href="#">Services</a>
-                                        <a href="#">Clients</a>
-                                        <a href="#">Contact</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-3">
-                                <div class="menu_single_row">
-                                    <div class="menu_single_heading">
-                                        <h2>For sell</h2>
-                                        <i class="fas fa-chevron-down mobile_menu_down_icon"></i>
-                                    </div>
-                                    <div class="menu_single_item">
-                                        <a href="result.php">cars</a>
-                                        <a href="#">Services</a>
-                                        <a href="#">Clients</a>
-                                        <a href="#">Contact</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-3">
-                                <div class="menu_single_row">
-                                    <div class="menu_single_heading">
-                                        <h2>For sell</h2>
-                                        <i class="fas fa-chevron-down mobile_menu_down_icon"></i>
-                                    </div>
-                                    <div class="menu_single_item">
-                                        <a href="result.php">cars</a>
-                                        <a href="#">Services</a>
-                                        <a href="#">Clients</a>
-                                        <a href="#">Contact</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-lg-3">
-                                <div class="menu_single_row">
-                                    <div class="menu_single_heading">
-                                        <h2>For sell</h2>
-                                        <i class="fas fa-chevron-down mobile_menu_down_icon"></i>
-                                    </div>
-                                    <div class="menu_single_item">
-                                        <a href="result.php">cars</a>
-                                        <a href="#">Services</a>
-                                        <a href="#">Clients</a>
-                                        <a href="#">Contact</a>
-                                    </div>
-                                </div>
-                            </div>
 
+
+                            @foreach($categories as $category)
+                                <div class="col-md-2 m-auto">
+                                    <div class="menu_single_row">
+
+                                        <div class="menu_single_heading">
+                                            <a style="color: #000;"
+                                               href="{{route('category.products',$category->slug)}}">
+                                                <h2>
+                                                    {{$category->name}}
+                                                </h2>
+                                            </a>
+                                            <i class="fas fa-chevron-down mobile_menu_down_icon show_menu_items"></i>
+                                        </div>
+                                        @if($category->subCategories->count() > 0)
+                                            <div class="menu_single_item">
+                                                @foreach($category->subCategories as $subCategory)
+                                                    <a href="{{route('subCategory.products',$subCategory->slug)}}">{{$subCategory->name}}</a>
+                                                @endforeach
+                                            </div>
+                                        @endif
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -132,8 +109,10 @@
 
 <footer class="footer_area">
     <div class="container">
-        <p>Marktplaats is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten of ontbrekende functionaliteiten op deze site.
-            Copyright © 2019 Marktplaats B.V. Alle rechten voorbehouden.</p>
+        <p>Nosmercado.com no ta responsabel pa ningun forma di daño causa na e producto / servicionan bendi riba e
+            website aki.
+            tampoco ta para responsabel pa pagonan cu tin cu wordo haci entre uzarionan di e website.
+            Contact: info@nosmercado.com..</p>
     </div>
 </footer>
 </body>
@@ -143,7 +122,8 @@
 <script src="{{asset('assets/js/owl.carousel.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
+
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             margin: 10,
@@ -158,6 +138,9 @@
                 }
             }
         })
+
     })
 </script>
+
+@yield('footer')
 </html>

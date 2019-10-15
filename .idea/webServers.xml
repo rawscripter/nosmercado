@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4c44a702-d023-4b83-8395-953086d0a568" name="Nosmercado" url="http://ftp.tridedesigns.com">
+        <fileTransfer host="ftp.tridedesigns.com" port="21" rootFolder="/public_html/rawscripter/shortenurl.rawscripters.dev">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
