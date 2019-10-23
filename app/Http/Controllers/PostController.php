@@ -47,7 +47,7 @@ class PostController extends Controller
     {
 
         $request->validate([
-            'title' => 'required|max:255',
+            'title' => 'required|max:55',
             'price' => 'required',
             'email' => 'required',
             'g_undefined' => 'required',
@@ -59,60 +59,42 @@ class PostController extends Controller
         ]);
 
 
-        if (!empty($request->file('g_undefined')))
-            if (count($request->file('g_undefined')) > 9)
-                return back()->withErrors('You can upload maximum 9 images for a post.');
-
+        //One single post can have max 9 images
+        $images = $request->file('g_undefined');
+        if (count($images) > 9)
+            return response()->json('error', 500);
 
         $postData = $request->all();
         $postData['expire_date'] = Carbon::now()->addDays(30);
-        $newPost = Post::create($postData);
+        $postImages = $this->uploadPostImage($request);
 
-        //send mail to the user
-        $this->sendMail($newPost);
+        if (!empty($postImages)) {
+            $newPost = Post::create($postData);
+            $this->createPostImage($newPost, $postImages);
+            //send mail to the user
+            $this->sendMail($newPost);
 
-        if (!empty($request->file('g_undefined'))) {
-            if ($request->hasfile('g_undefined')) {
-                $images = $request->file('g_undefined');
-                foreach ($images as $image) {
-                    $name = Uuid::generate()->string . '.' . $image->getClientOriginalExtension();
+            // if everything all right then redirect user to post image category with newest filter
+            $url['url'] = url('category/' . $newPost->category->slug . '/posts?short=newest');
 
-                    $destinationPath = public_path('/post/images/thumb');
-                    $img = \Intervention\Image\Facades\Image::make($image->getRealPath());
-
-                    // backup status
-                    $img->backup();
-
-                    //image for thumb
-                    $img->resize(400, 400)->save($destinationPath . '/' . $name);
-                    $img->reset();
-
-                    //uploading original image
-                    $destinationPath = public_path('/post/images');
-                    $img->save($destinationPath . '/' . $name);
-
-                    $newImage = Image::create(
-                        ['name' => $name]
-                    );
-                    // adding post id and image id to pivot table
-                    $this->createPostImage($newPost, $newImage);
-                }
-            }
+            return json_encode($url);
         }
-        $url['url'] = url('sub-category/' . $newPost->subCategory->slug . '/posts?short=newest');
-        return json_encode($url);
+        return response()->json('Something Went wrong. Please try again.', 500);
 
     }
 
 
-    public function createPostImage($post, $image)
+    public function createPostImage($post, $images)
     {
-        PostImage::create(
-            [
-                'post_id' => $post->id,
-                'image_id' => $image->id,
-            ]
-        );
+        foreach ($images as $image) {
+            PostImage::create(
+                [
+                    'post_id' => $post->id,
+                    'image_id' => $image,
+                ]
+            );
+        }
+
     }
 
     /**
@@ -222,5 +204,40 @@ class PostController extends Controller
             return false;
 
         return $post;
+    }
+
+    public function uploadPostImage($request)
+    {
+        $postImages = [];
+        if (!empty($request->file('g_undefined'))) {
+            if ($request->hasfile('g_undefined')) {
+                $images = $request->file('g_undefined');
+                foreach ($images as $image) {
+                    $name = Uuid::generate()->string . '.' . $image->getClientOriginalExtension();
+
+                    $destinationPath = public_path('/post/images/thumb');
+                    $img = \Intervention\Image\Facades\Image::make($image->getRealPath());
+
+                    // backup status
+                    $img->backup();
+
+                    //image for thumb
+                    $img->resize(400, 400)->save($destinationPath . '/' . $name);
+                    $img->reset();
+
+                    //uploading original image
+                    $destinationPath = public_path('/post/images');
+                    $img->save($destinationPath . '/' . $name);
+
+                    $newImage = Image::create(
+                        ['name' => $name]
+                    );
+                    array_push($postImages, $newImage->id);
+                }
+
+            }
+
+        }
+        return $postImages;
     }
 }
