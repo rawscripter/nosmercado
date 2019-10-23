@@ -15,6 +15,7 @@ Route::get('/', 'SiteController@index')->name('home');
 Route::get('/category/{category}/posts', 'SiteController@categoryProducts')->name('category.products');
 Route::get('/sub-category/{category}/{subCategory}/posts', 'SiteController@subCategoryProducts')->name('subCategory.products');
 Route::get('/categories/tur-advertencia/posts', 'SiteController@allCategoryProducts')->name('all.category.products');
+Route::get('/search', 'SiteController@postSearch')->name('post.search');
 
 //
 Route::get('/filer/{category?}/{sub-category?}', 'SiteController@filerPosts')->name('filter.posts');

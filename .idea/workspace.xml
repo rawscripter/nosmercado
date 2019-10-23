@@ -1,207 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/resources/views/site/index.blade.php" line="69" />
+    <bookmark url="file://$PROJECT_DIR$/resources/views/site/index.blade.php" line="75" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3451429-1b58-400f-86cd-9b7f75062dac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/old-mail-to-post-author.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Click.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Click.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/MailToPostAuthor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/MailToPostAuthor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PostImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PostImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SubCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SubCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/owl.theme.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/owl.carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/public/error_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/046b4930-ee81-11e9-ae49-85940c869634.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/1161b460-ee10-11e9-afc0-9d3c504f581a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/13fd3b40-ee0a-11e9-bbae-cde19d2acaa9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/17d55dd0-ee07-11e9-86af-1d3586f022d8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/185a0050-ee07-11e9-bf0b-a500c9d8efcd.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/1bc1f660-ede2-11e9-92c9-b57176ef29b7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/1e09cd20-ed21-11e9-bf79-99d9d87de703.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/31828200-ede3-11e9-b9c5-05eb19a71177.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/32071d20-ede3-11e9-ae8d-b15018dd97d1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/32ead560-ec67-11e9-a9fb-2f7321fedc20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/33169d60-edc6-11e9-ad2d-6d9c50bdacdb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/355436d0-ee0a-11e9-9b15-9573024c6e57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/374f80e0-edf7-11e9-8ebc-07797ce42a89.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/42c40a60-edc6-11e9-a96d-add246a5124c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/49a41d60-ee07-11e9-a1cf-4fde9b0a38b4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/4a43f540-ed21-11e9-af55-39d210337ca8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/4b84f9e0-ee0a-11e9-8f4c-d5a63a75fe4f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/4d9cd5c0-edf2-11e9-9211-33715f86f076.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/510754c0-ee05-11e9-bb8e-5510ae037779.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/533d49c0-ede9-11e9-9d30-b54021d1e579.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/56a43ac0-edc6-11e9-afe2-c335a3347405.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/58f9cdc0-edd4-11e9-a5fd-274d00b7da6a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/60715280-ed2b-11e9-9f29-2368bcc50135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/641a14d0-ed2c-11e9-aea9-2f0c4a3242b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/65236e40-ed21-11e9-a454-8fee89c3d084.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/6f221610-ee08-11e9-96dc-7f2225b90f53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/703c0ef0-ec6c-11e9-9e5e-072a29aa69ea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/706d6e00-ede1-11e9-9e64-cf9185195527.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/717bafa0-ee0a-11e9-a0b0-1bdfe9416d28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/71c3ddc0-ee08-11e9-ad9f-b9c4fb8d9142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/7b7d3540-ee0b-11e9-9a24-296b2b9c336b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/84625ca0-ee0a-11e9-a976-1b6cb87bce31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/8ef71f70-ee0b-11e9-a101-4390c03991ec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/9bbe74d0-ee12-11e9-a891-a1ad7011fff7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/a00a0ed0-ee08-11e9-a570-119285bad67c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/a8b8e260-ee1f-11e9-bea4-6b35761c96c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/a958b780-ee0b-11e9-9862-d12bf9ae8013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/ac61fa60-ed2c-11e9-b346-9dd2d0312449.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/ade4bb20-edd7-11e9-9532-cd20fd5d3082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/c59065d0-ee09-11e9-8b49-63aee2d980dd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/c8d84c90-ee88-11e9-bb65-47f48fa0201c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/cd2a0750-ee19-11e9-ae50-fb1c5bc0e591.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d2468b10-ed0d-11e9-aca1-c303f4bef4b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d3d09640-ed09-11e9-a1bb-e15dd4c35d20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d514de50-edcf-11e9-8cda-97e26906f8ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d5f9e7d0-ed12-11e9-bab1-abb2ad1186fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d62040f0-ee87-11e9-a7cb-b943e9b7417e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d64bf990-ee87-11e9-95f7-3d031c22acf0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d66533b0-ee87-11e9-890a-71f25c6224ee.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d6811ab0-ee87-11e9-a285-1f25644d562e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d6977500-ee87-11e9-88f1-5769ad503db3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d6a48b70-ee87-11e9-b6d2-799a8237b26a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d6c4ffe0-ee87-11e9-ba93-dfa435ce0ae2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/d6e11e20-ee87-11e9-8855-9749cb070926.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/dab67270-ed2a-11e9-aa39-496752840c59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/e5288250-ee0c-11e9-bc84-dbfb33f31cab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/fc6304e0-ec66-11e9-82c2-2dbda58e36a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/fe093ca0-ec66-11e9-bb02-63828eaefad0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/046b4930-ee81-11e9-ae49-85940c869634.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/1161b460-ee10-11e9-afc0-9d3c504f581a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/13fd3b40-ee0a-11e9-bbae-cde19d2acaa9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/17d55dd0-ee07-11e9-86af-1d3586f022d8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/185a0050-ee07-11e9-bf0b-a500c9d8efcd.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/1bc1f660-ede2-11e9-92c9-b57176ef29b7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/1e09cd20-ed21-11e9-bf79-99d9d87de703.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/31828200-ede3-11e9-b9c5-05eb19a71177.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/32071d20-ede3-11e9-ae8d-b15018dd97d1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/32ead560-ec67-11e9-a9fb-2f7321fedc20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/33169d60-edc6-11e9-ad2d-6d9c50bdacdb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/355436d0-ee0a-11e9-9b15-9573024c6e57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/374f80e0-edf7-11e9-8ebc-07797ce42a89.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/42c40a60-edc6-11e9-a96d-add246a5124c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/49a41d60-ee07-11e9-a1cf-4fde9b0a38b4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/4a43f540-ed21-11e9-af55-39d210337ca8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/4b84f9e0-ee0a-11e9-8f4c-d5a63a75fe4f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/4d9cd5c0-edf2-11e9-9211-33715f86f076.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/510754c0-ee05-11e9-bb8e-5510ae037779.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/533d49c0-ede9-11e9-9d30-b54021d1e579.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/56a43ac0-edc6-11e9-afe2-c335a3347405.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/58f9cdc0-edd4-11e9-a5fd-274d00b7da6a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/60715280-ed2b-11e9-9f29-2368bcc50135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/641a14d0-ed2c-11e9-aea9-2f0c4a3242b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/65236e40-ed21-11e9-a454-8fee89c3d084.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/6f221610-ee08-11e9-96dc-7f2225b90f53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/703c0ef0-ec6c-11e9-9e5e-072a29aa69ea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/706d6e00-ede1-11e9-9e64-cf9185195527.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/717bafa0-ee0a-11e9-a0b0-1bdfe9416d28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/71c3ddc0-ee08-11e9-ad9f-b9c4fb8d9142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/7b7d3540-ee0b-11e9-9a24-296b2b9c336b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/84625ca0-ee0a-11e9-a976-1b6cb87bce31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/8ef71f70-ee0b-11e9-a101-4390c03991ec.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/9bbe74d0-ee12-11e9-a891-a1ad7011fff7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/a00a0ed0-ee08-11e9-a570-119285bad67c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/a8b8e260-ee1f-11e9-bea4-6b35761c96c1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/a958b780-ee0b-11e9-9862-d12bf9ae8013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/ac61fa60-ed2c-11e9-b346-9dd2d0312449.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/ade4bb20-edd7-11e9-9532-cd20fd5d3082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/c59065d0-ee09-11e9-8b49-63aee2d980dd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/c8d84c90-ee88-11e9-bb65-47f48fa0201c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/cd2a0750-ee19-11e9-ae50-fb1c5bc0e591.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d2468b10-ed0d-11e9-aca1-c303f4bef4b9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d3d09640-ed09-11e9-a1bb-e15dd4c35d20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d514de50-edcf-11e9-8cda-97e26906f8ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d5f9e7d0-ed12-11e9-bab1-abb2ad1186fc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d62040f0-ee87-11e9-a7cb-b943e9b7417e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d64bf990-ee87-11e9-95f7-3d031c22acf0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d66533b0-ee87-11e9-890a-71f25c6224ee.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d6811ab0-ee87-11e9-a285-1f25644d562e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d6977500-ee87-11e9-88f1-5769ad503db3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d6a48b70-ee87-11e9-b6d2-799a8237b26a.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d6c4ffe0-ee87-11e9-ba93-dfa435ce0ae2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/d6e11e20-ee87-11e9-8855-9749cb070926.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/dab67270-ed2a-11e9-aa39-496752840c59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/e5288250-ee0c-11e9-bc84-dbfb33f31cab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/fc6304e0-ec66-11e9-82c2-2dbda58e36a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/fe093ca0-ec66-11e9-bb02-63828eaefad0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/160d88a0-e9f0-11e9-94cc-01407b6cbdd1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/160dc070-e9f0-11e9-9d38-6d306539bfeb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/160de5d0-e9f0-11e9-a78c-81d67790ff48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/2748a1d0-e9f0-11e9-aa7d-c7eb8b99de9e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/6066ee00-e9f0-11e9-8532-c7bda35caea8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/61d1d680-e9f0-11e9-81e7-75566e9d90c3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/67a18fe0-e9f0-11e9-8124-6931e26bbf9d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicpost/images/68e4d810-e9f0-11e9-88af-bd0eebf96236.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/short.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/short.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/site/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/post-not-found.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/post-not-found.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/successfully-deleted.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/successfully-deleted.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/B0YXiN1VW5PgOLAFAEJ8sP4PqRLXXx7X25sNoaME" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/B0YXiN1VW5PgOLAFAEJ8sP4PqRLXXx7X25sNoaME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/157c668c88fb6af1e0eec118ed774095326b4168.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/40ece97a6e6f94df0d7d5b68a3dbf80c0a5b3eae.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/460103969777e6fe5e5c009b5c2da96bc5b04741.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/467f67671a25d281798cc5575fb9da3e2b9f59e7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5e497bc9c608e4e0089832f0f4bb239ea78b3707.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5e497bc9c608e4e0089832f0f4bb239ea78b3707.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/63eb120e073ae427b637701e0b40b33c70c458b2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/63eb120e073ae427b637701e0b40b33c70c458b2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7071874a9a2d1493fa1034aa8e9fae82035b42dc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/8e161a137cc2f3b50d78fad8806539cc62f650e6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9c2920d957246b6e8fd5bce0e4fbaa4ede3f44fe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a5b6e8031604303cf004ee58f26c2c1c358c7138.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a5b6e8031604303cf004ee58f26c2c1c358c7138.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/aaad70992932926d13b0eb59b9038b5317d254a7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c49efe50b412f309b8300f54b879e42838ed185c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ccf7a77389010ef169437b6821584a24c2c116e0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ece36e1f01bcc6e30bb7acc24438946809f39da7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ffe0732580c5ef331b3e44157e663a8ec886f352.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2019-10-23.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-10-23.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,14 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2974">
-              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-              <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="328">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -247,6 +69,50 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#543#1420#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/site/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="654">
+              <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="14" column="87" lean-forward="true" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout/master-layout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="75" column="34" lean-forward="true" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -258,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>3</find>
       <find>show</find>
       <find>sha</find>
       <find>380x</find>
@@ -288,6 +153,7 @@
       <find>fas fa-mobile-alt</find>
       <find>.product_overview_content</find>
       <find>form</find>
+      <find>&lt;form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -299,20 +165,20 @@
         <option value="$PROJECT_DIR$/public/assets/css/responsive.css" />
         <option value="$PROJECT_DIR$/resources/views/layout/short.blade.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/SubCategory.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/layout/old-mail-to-post-author.blade.php" />
         <option value="$PROJECT_DIR$/app/Post.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/157c668c88fb6af1e0eec118ed774095326b4168.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
         <option value="$PROJECT_DIR$/resources/views/site/post/create.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" />
       </list>
     </option>
   </component>
@@ -413,8 +279,8 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1826" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="990" />
@@ -441,15 +307,31 @@
             <path>
               <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
               <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
               <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -535,18 +417,18 @@
       <workItem from="1571165485542" duration="12000" />
       <workItem from="1571272205128" duration="24000" />
       <workItem from="1571272241834" duration="3160000" />
-      <workItem from="1571844456624" duration="9397000" />
+      <workItem from="1571844456624" duration="12106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22533000" />
+    <option name="totallyTimeSpent" value="25242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -561,7 +443,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.36852396" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32844576" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32355815" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -605,20 +487,10 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/short.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SubCategory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="73" column="44" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -653,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1189">
@@ -678,24 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/master-layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -823,10 +670,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2974">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+        <state relative-caret-position="328">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="14" column="87" lean-forward="true" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/master-layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="75" column="34" lean-forward="true" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
+            <element signature="e#543#1420#0#PHP" />
           </folding>
         </state>
       </provider>
