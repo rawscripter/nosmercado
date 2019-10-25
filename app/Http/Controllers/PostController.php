@@ -8,7 +8,6 @@ use App\Image;
 use App\Mail\MailToPostAuthor;
 use App\Post;
 use App\PostImage;
-use App\SubCategory;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -65,6 +64,7 @@ class PostController extends Controller
             return response()->json('error', 500);
 
         $postData = $request->all();
+        //adding expire days for the post
         $postData['expire_date'] = Carbon::now()->addDays(30);
         $postImages = $this->uploadPostImage($request);
 
@@ -135,6 +135,13 @@ class PostController extends Controller
         //
     }
 
+
+    public function editPost($uuid)
+    {
+        $post = Post::whereUuid($uuid)->first();
+        return view('site.post.edit', compact('post'));
+    }
+
     /**
      * Update the specified resource in storage.
      *
@@ -159,21 +166,20 @@ class PostController extends Controller
     }
 
 
-    public function deletePost($id, $title, $email, $expire)
+    public function deletePost($uuid)
     {
-        $post = $this->decodeAndFindPost($id, $title, $email, $expire);
+        $post = Post::whereUuid($uuid)->first();
         $categories = Category::orderBy('id', 'asc')->get();
         if (!$post)
             return view('site.post.post-not-found', compact('categories'));
 
-        $confirmDeleteUrl = url('/post/destroy/' . $id . '/' . $title . '/' . $email . '/' . $expire);
-        return view('site.post.delete', compact('categories', 'confirmDeleteUrl'));
+        return view('site.post.delete', compact('categories', 'post'));
     }
 
 
-    public function confirmDeletePost($id, $title, $email, $expire)
+    public function confirmDeletePost($uuid)
     {
-        $post = $this->decodeAndFindPost($id, $title, $email, $expire);
+        $post = Post::whereUuid($uuid)->first();;
         $categories = Category::orderBy('id', 'asc')->get();
         if (!$post)
             return view('site.post.post-not-found', compact('categories'));
@@ -185,25 +191,6 @@ class PostController extends Controller
     public function sendMail(Post $post)
     {
         Mail::to($post->email)->send(new MailToPostAuthor($post));
-    }
-
-    public function decodeAndFindPost($id, $title, $email, $expire)
-    {
-        $decoded_id = base64_decode($id);
-        $decoded_title = base64_decode($title);
-        $decoded_email = base64_decode($email);
-        $decoded_expire = base64_decode($expire);
-
-        $post = Post::findOrFail($decoded_id)
-            ->whereTitle($decoded_title)
-            ->whereEmail($decoded_email)
-            ->whereExpireDate($decoded_expire)
-            ->first();
-
-        if (empty($post))
-            return false;
-
-        return $post;
     }
 
     public function uploadPostImage($request)

@@ -28,9 +28,11 @@ Route::post('/post/store', 'PostController@store')->name('post.store');
 //for shorting
 
 Route::get('/ca/{category?}/{subCategory?}', 'SiteController@shortProducts')->name('short.products');
-//route for delete the post
-Route::get('/destroy/{id}/{title}/{email}/{expire_date}', 'PostController@deletePost');
-Route::get('/post/destroy/{id}/{title}/{email}/{expire_date}', 'PostController@confirmDeletePost');
+//route for email links [edit and delete]
+Route::get('/delete/{uuid}', 'PostController@deletePost')->name('delete.user.post.from.email.url');
+Route::get('/post/destroy/{uuid}', 'PostController@confirmDeletePost')->name('confirm.delete.post');
+Route::get('/post/edit/{uuid}', 'PostController@editPost')->name('post.update.email.url');
+Route::post('/post/update/{uuid}', 'PostController@editPost')->name('post.update');
 
 //for check if mail is working or not
 Route::get('/sendMail/{post}', 'PostController@sendMail');
