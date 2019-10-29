@@ -83,6 +83,52 @@ class PostController extends Controller
 
     }
 
+    public function updatePost($uuid, Request $request)
+    {
+
+
+        $request->validate([
+            'title' => 'required|max:55',
+            'price' => 'required',
+            'email' => 'required',
+        ], [
+            'title.required' => 'Post Title field is required!',
+            'price.required' => 'Post Price field is required!',
+            'email.required' => 'Email field is required!',
+        ]);
+        $post = Post::findOrFail($uuid);
+
+
+        //delete old images from database
+        if (isset($request->removedImage)) {
+            if (!empty($request->removedImage)) {
+                $removeImages = $request->removedImage;
+                foreach ($removeImages as $i) {
+                    $image = Image::find($i);
+                    if (!empty($image))
+                        $image->delete();
+                }
+            }
+        }
+
+        $postData = $request->all();
+        $updatePost = $post->update($postData);
+
+        $postImages = $this->uploadPostImage($request);
+
+        if (!empty($postImages)) {
+            $this->createPostImage($post, $postImages);
+        }
+
+        if ($updatePost) {
+            $url['url'] = url('category/' . $post->category->slug . '/posts?short=newest');
+
+            return json_encode($url);
+        }
+
+        return response()->json('Something Went wrong. Please try again.', 500);
+    }
+
 
     public function createPostImage($post, $images)
     {
@@ -209,7 +255,8 @@ class PostController extends Controller
                     $img->backup();
 
                     //image for thumb
-                    $img->resize(400, 400)->save($destinationPath . '/' . $name);
+                    $img->crop(100, 100, 25, 25)->save($destinationPath . '/' . $name);
+//                    $img->resize(400, 400)->save($destinationPath . '/' . $name);
                     $img->reset();
 
                     //uploading original image
