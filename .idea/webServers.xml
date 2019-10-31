@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="4c44a702-d023-4b83-8395-953086d0a568" name="Nosmercado" url="http://ftp.tridedesigns.com">
-        <fileTransfer host="ftp.tridedesigns.com" port="21" rootFolder="/public_html/rawscripter/shortenurl.rawscripters.dev">
+      <webServer id="c27ef3e6-6b72-4a6d-b9b8-3eec456fd851" name="nosmercado.com" url="http://199.204.248.127">
+        <fileTransfer host="199.204.248.127" port="21" rootFolder="/nosmercado.com">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

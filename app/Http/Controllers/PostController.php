@@ -246,6 +246,8 @@ class PostController extends Controller
             if ($request->hasfile('g_undefined')) {
                 $images = $request->file('g_undefined');
                 foreach ($images as $image) {
+
+
                     $name = Uuid::generate()->string . '.' . $image->getClientOriginalExtension();
 
                     $destinationPath = public_path('/post/images/thumb');
@@ -254,10 +256,27 @@ class PostController extends Controller
                     // backup status
                     $img->backup();
 
-                    //image for thumb
-                    $img->crop(100, 100, 25, 25)->save($destinationPath . '/' . $name);
-//                    $img->resize(400, 400)->save($destinationPath . '/' . $name);
+                    $imagedetails = getimagesize($image);
+
+
+                    $width = $imagedetails[0];
+                    $height = $imagedetails[1];
+                    if ($width > $height) {
+                        $newHeight = $height;
+                    } else {
+                        $newHeight = $width;
+                    }
+
+                    $img->fit($newHeight, $newHeight, function ($constraint) {
+                        $constraint->upsize();
+                    });
+
+                    $img->save($destinationPath . '/' . $name);
+                    //$img->resize(400, 400)->save($destinationPath . '/' . $name);
                     $img->reset();
+
+                    $cropedImage = \Intervention\Image\Facades\Image::make($destinationPath . '/' . $name);
+                    $cropedImage->resize(400, 400)->save($destinationPath . '/' . $name);
 
                     //uploading original image
                     $destinationPath = public_path('/post/images');
