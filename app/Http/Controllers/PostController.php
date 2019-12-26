@@ -20,6 +20,7 @@ use Carbon\Carbon;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 
 use Webpatser\Uuid\Uuid;
@@ -431,6 +432,14 @@ class PostController extends Controller
         if (!$post)
 
             return view('site.post.post-not-found', compact('categories'));
+        $images = $post->images;
+
+        foreach ($images as $image) {
+            File::delete('post/images/' . $image->name);
+            File::delete('post/images/thumb/' . $image->name);
+            $image->delete();
+        }
+
 
         $post->delete();
 
