@@ -105,35 +105,17 @@
                                             <label for="">{{$option->name}}</label>
 
                                         </div>
-
                                     @endforeach
-
                             </div>
-
                         </div>
-
-
-
 -->
-
-
-                            <!--
-
                             <div class="form-group">
-
-
-
-                                <input type="text" maxlength="20" name="title" class="form-control rounded-0" id="title"
-
-
-
+                                <input type="text" required maxlength="20" name="title" class="form-control rounded-0"
+                                       id="title"
                                        placeholder="Titulo di e advertencia">
-
-
-
                             </div>
 
-                            -->
+                            <!-- -->
 
 
                             <!-- image that is dropped is automatically categorized -->

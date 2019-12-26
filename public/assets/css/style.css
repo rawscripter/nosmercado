@@ -1875,3 +1875,76 @@ p.view_product_details {
 .dropdown-item {
     cursor: pointer;
 }
+
+
+.cart {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.cart i.fa {
+    font-size: 25px;
+    color: #7b7b7b;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
+
+#lblCartCount {
+    font-size: 12px;
+    background: #4e4e4e;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+
+div.scrollmenu {
+    background-color: white;
+    overflow: unset;
+    white-space: nowrap;
+    padding: 15px;
+    margin-left: -15px;
+    margin-top: -10px;
+
+}
+
+
+div.scrollmenu a {
+
+    display: inline-block;
+
+    color: #2B62D9;
+
+    text-align: center;
+
+    padding: 5px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    border: 1px solid #2B62D9;
+
+    font-size: 0.8rem;
+
+}
+
+
+div#modal {
+    width: 100% !important;
+    max-width: fit-content !important;
+}

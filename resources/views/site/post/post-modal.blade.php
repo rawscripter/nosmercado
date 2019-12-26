@@ -160,23 +160,15 @@
                     <!-- Left and right controls -->
 
 
-                    <a class="carousel-control-prev" href="#postImageSlider" data-slide="prev">
-
-
-                        <span class="carousel-control-prev-icon"></span>
-
-
-                    </a>
-
-
-                    <a class="carousel-control-next" href="#postImageSlider" data-slide="next">
-
-
-                        <span class="carousel-control-next-icon"></span>
-
-
-                    </a>
-
+                    {{--show previous and next button if only there multiple images of the post--}}
+                    @if($post->images->count() > 1)
+                        <a class="carousel-control-prev" href="#postImageSlider" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#postImageSlider" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    @endif
 
                 </div>
 
@@ -201,7 +193,10 @@
                             @endif
                         </div>
                         <div class="col-md-4">
-                            <a style="color:black;" href="tel:{{$post->phone}}"> {{$post->phone}} </a>
+                            {{--                            <a style="color:black;" href="tel:{{$post->phone}}"> {{$post->phone}} </a>--}}
+                            <button data-product="{{$post->id}}" class="btn add-to-cart btn-primary text-white"><i
+                                    class="fas fa-cart-plus "></i> <span class="cart-text">Add To Cart</span>
+                            </button>
                         </div>
                     </div>
 
@@ -215,11 +210,6 @@
                         </div>
 
                     @endif
-
-
-
-
-
                     @auth()
                         @if($post->user_id === auth()->user()->id)
                             <div>
@@ -232,13 +222,8 @@
                             </div>
                         @endif
                     @endauth
-
                 </div>
-
-
             </div>
-
-
         </div>
 
 

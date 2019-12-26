@@ -116,6 +116,9 @@
 
         }
 
+
+
+
     </style>
 
 
@@ -141,8 +144,6 @@
 
 
                 <div class="row">
-
-
                     <div class="col-md-9 col-lg-9">
 
 
@@ -236,27 +237,14 @@
 
 
                     </div>
-
-
                     <div class="col-md-3 col-lg-3">
-
-
                         <div class="header_top_button">
-
-
                             {{--                            <a href="{{route('post.create')}}"--}}
-
                             {{--                               style="font-size:medium;margin-top: -.04rem !important;padding: 0.4rem .5rem !important;"--}}
-
                             {{--                               class="btn btn-primary">--}}
-
                             {{--                                <i style="margin-right: 5px;" class="fas fa-plus fa-lg"></i> Crea advertencia--}}
-
                             {{--                            </a>--}}
-
                             @include('layout.inc.login-menu')
-
-
 
                         </div>
 
@@ -266,9 +254,20 @@
 
                 </div>
 
-
             </div>
 
+            <div class="cart">
+                <a href="/cart">
+                    <i class="fa" style="font-size:24px">&#xf07a;</i>
+                    <span class='badge badge-success cart-counter' id='lblCartCount'>
+                    @if(session('cart'))
+                            {{count(session('cart'))}}
+                        @else
+                            {{'0'}}
+                        @endif
+                </span>
+                </a>
+            </div>
 
         </div>
 

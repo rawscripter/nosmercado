@@ -53,6 +53,8 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Role</th>
+                                    <th>Total Posts</th>
+                                    <th>Active Posts</th>
                                     <th>Added At</th>
                                     <th>Delete</th>
                                 </tr>
@@ -65,6 +67,8 @@
                                             <td>{{$customer->name}}</td>
                                             <td>{{$customer->email}}</td>
                                             <td>{{$customer->role}}</td>
+                                            <td>{{$customer->totalPosts->count()}}</td>
+                                            <td>{{$customer->activePosts->count()}}</td>
                                             <td>{{ $customer->created_at->format('m-d-Y H:s:i') }}</td>
                                             <td><a href="{{route('admin.login.as.customer',$customer->id)}}"
                                                    class="btn btn-primary">Login </a></td>

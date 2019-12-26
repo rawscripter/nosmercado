@@ -19,6 +19,10 @@ Route::get('/search', 'SiteController@postSearch')->name('post.search');
 Route::get('/filer/{category?}/{sub-category?}', 'SiteController@filerPosts')->name('filter.posts');
 Route::get('/post/{post}/details', 'PostController@show');
 
+Route::get('/cart', 'CartController@index');
+Route::get('/cart/{post}/add', 'CartController@addToCart');
+Route::get('/cart/{post}/remove', 'CartController@removeFromCart')->name('remove.from.cart');
+
 
 Route::get('/post/create', 'PostController@create')->name('post.create')->middleware('auth');
 Route::post('/post/store', 'PostController@store')->name('post.store')->middleware('auth');
@@ -57,8 +61,16 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
     Route::get('/admin/archive/posts', 'AdminPostController@archivePosts')->name('admin.archive.posts');
     Route::get('/admin/{post}/archive', 'AdminPostController@postArchive')->name('admin.post.archive');
     Route::get('/admin/{post}/active', 'AdminPostController@postActive')->name('admin.post.active');
+
+
     Route::delete('/admin/{post}/delete', 'AdminPostController@delete')->name('admin.post.destroy');
 });
 
 
-
+//for clear site cache
+Route::get('/clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    Artisan::call('config:cache');
+    return 'cache cleared';
+});

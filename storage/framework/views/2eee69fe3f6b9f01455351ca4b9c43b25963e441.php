@@ -49,6 +49,8 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Role</th>
+                                    <th>Total Posts</th>
+                                    <th>Active Posts</th>
                                     <th>Added At</th>
                                     <th>Delete</th>
                                 </tr>
@@ -61,6 +63,8 @@
                                             <td><?php echo e($customer->name); ?></td>
                                             <td><?php echo e($customer->email); ?></td>
                                             <td><?php echo e($customer->role); ?></td>
+                                            <td><?php echo e($customer->totalPosts->count()); ?></td>
+                                            <td><?php echo e($customer->activePosts->count()); ?></td>
                                             <td><?php echo e($customer->created_at->format('m-d-Y H:s:i')); ?></td>
                                             <td><a href="<?php echo e(route('admin.login.as.customer',$customer->id)); ?>"
                                                    class="btn btn-primary">Login </a></td>

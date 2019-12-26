@@ -1,7 +1,5 @@
 @extends('layout.master-layout')
 @section('header')
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/basic.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
     <link rel="stylesheet" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
 @endsection
 @section('body')
@@ -96,7 +94,6 @@
     </div>
 @endsection
 @section('footer')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
     <script>

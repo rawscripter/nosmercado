@@ -116,6 +116,9 @@
 
         }
 
+
+
+
     </style>
 
 
@@ -141,8 +144,6 @@
 
 
                 <div class="row">
-
-
                     <div class="col-md-9 col-lg-9">
 
 
@@ -236,27 +237,14 @@
 
 
                     </div>
-
-
                     <div class="col-md-3 col-lg-3">
-
-
                         <div class="header_top_button">
-
-
                             
-
                             
-
                             
-
                             
-
                             
-
                             <?php echo $__env->make('layout.inc.login-menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
-
 
                         </div>
 
@@ -266,9 +254,22 @@
 
                 </div>
 
-
             </div>
 
+            <div class="cart">
+                <a href="/cart">
+                    <i class="fa" style="font-size:24px">&#xf07a;</i>
+                    <span class='badge badge-success cart-counter' id='lblCartCount'>
+                    <?php if(session('cart')): ?>
+                            <?php echo e(count(session('cart'))); ?>
+
+                        <?php else: ?>
+                            <?php echo e('0'); ?>
+
+                        <?php endif; ?>
+                </span>
+                </a>
+            </div>
 
         </div>
 

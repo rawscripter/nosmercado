@@ -30,14 +30,12 @@ class CustomerController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
-
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
         return redirect()->back()->withMessage('Customer Created Successfully.');
-
     }
 
     public function destroy(User $user)
@@ -46,12 +44,10 @@ class CustomerController extends Controller
         return redirect()->back()->withMessage('Customer has been Deleted.');
     }
 
-
     public function posts()
     {
         $user = auth()->user();
         $posts = $user->posts();
-
         return view('site.index', compact('posts'));
     }
 
@@ -73,25 +69,17 @@ class CustomerController extends Controller
             'address.required' => 'Please jena bo address!',
             'phone.required' => 'Please jena bo number di contacto!',
             'email.required' => 'Please jena bo email!',
-
         ]);
-
         if ($request->hasFile('logo'))
             $data['logo'] = $this->uploadLogo($request->logo);
-
-
         $user = auth()->user()->update($data);
         if ($user) {
             return response()->json('Successfully updated.');
         }
-
         return response()->json('Algo a bai malo. Please purba atrobe.', 500);
-
     }
 
-
     public function uploadLogo($image)
-
     {
         $name = Uuid::generate()->string . '.' . $image->getClientOriginalExtension();
         $destinationPath = public_path('/post/user/logo');
@@ -99,6 +87,4 @@ class CustomerController extends Controller
         $img->save($destinationPath . '/' . $name);  #img saved using constraint
         return $name;
     }
-
-
 }

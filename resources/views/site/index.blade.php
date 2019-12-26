@@ -4,61 +4,6 @@
 
 @section('body')
 
-
-
-    <style>
-
-        div.scrollmenu {
-
-            background-color: white;
-
-            overflow: auto;
-
-            white-space: nowrap;
-
-            padding: 15px;
-
-            margin-left: -15px;
-
-            margin-top: -10px;
-
-        }
-
-
-        div.scrollmenu a {
-
-            display: inline-block;
-
-            color: #2B62D9;
-
-            text-align: center;
-
-            padding: 5px;
-
-            text-decoration: none;
-
-            border-radius: 5px;
-
-            font-weight: 700;
-
-            border: 1px solid #2B62D9;
-
-            font-size: 0.8rem;
-
-        }
-
-
-        div.scrollmenu a:hover {
-
-            /* background-color: #777; */
-
-        }
-
-
-    </style>
-
-
-
     <div class="main_content">
 
         <!-- shorting option markup -->
@@ -120,12 +65,12 @@
 
 
                                     if(isset($shortCategory)){
-                                        echo $shortCategory->name;
+                                            echo $shortCategory->name;
 
                                     }elseif (isset($selectedCategory)){
-                                        echo $selectedCategory ;
+                                            echo $selectedCategory ;
                                     }else{
-                                        echo 'Categoria';
+                                            echo 'Categoria';
                                     }
 
 
@@ -137,15 +82,15 @@
 
 
 
-                                            class="fas fa-angle-down"></i><i
+                                                    class="fas fa-angle-down"></i><i
 
 
 
-                                            class="fas fa-angle-up cat_up"></i></a>
+                                                    class="fas fa-angle-up cat_up"></i></a>
 
 
 
-                                <ul class="left-on-desktop custom-scrollbar shorting_dropdown_menu">
+                            <ul class="left-on-desktop custom-scrollbar shorting_dropdown_menu">
 
 
 
@@ -169,7 +114,7 @@
 
 
 
-                                        <a href="{{route('category.products',$category->slug)}}">{{$category->name}}
+                                            <a href="{{route('category.products',$category->slug)}}">{{$category->name}}
 
                                         ({{count($category->posts)}})</a>
 
@@ -186,7 +131,7 @@
 
 
 
-                                </li>
+                            </li>
 
 -->
 
@@ -215,7 +160,7 @@
 
                                     <li>
 
-                                        <a href="?{{$previousGetReq}}short=mas-nobo">Mas nobo </a>
+                                            <a href="?{{$previousGetReq}}short=mas-nobo">Mas nobo </a>
 
                                             </li>
 
@@ -296,7 +241,9 @@
                                                 </div>
                                             @endif
                                         @endauth
-                                        <p class="view_product_details" data-post="{{$post->id}}"><i
+                                        <p class="view_product_details post-details-ajax-request"
+                                           data-id="{{$post->id}}">
+                                            <i
                                                 class="fas fa-eye"></i>{{$post->clicks}} <span
                                                 class="hide-in-desktop"><br>Details</span></p>
                                     </div>
@@ -408,42 +355,43 @@
 
 
 
-    <script defer>
-
-
+    <script>
         $(document).ready(function () {
+            $(document).on('click', '.view_product_details.post-details-ajax-request', function () {
+                    let item = $(this).data('id');
 
-
-            $(document).on('click', '.view_product_details', function () {
-
-
-                let item = $(this);
-
-
-                let post = item.data('post');
-
-
-                $.get(`/post/${post}/details`, function (data, status) {
-
-
-                    $("#outputModal").html(data);
-
-
-                    $("#product_overview_modal").modal('show');
-
-
-                    var owl = $(".owl-carousel");
-
-
-                    owl.owlCarousel({
-
-
-                        items: 1,
-
-
+                    $.get(`/post/${item}/details`, function (data, status) {
+                        $("#outputModal").html(data);
+                        $("#product_overview_modal").modal('show');
+                        let owl = $(".owl-carousel");
+                        owl.owlCarousel({
+                            items: 1,
+                        });
                     });
 
+                }
+            )
+            ;
+            $(document).on('click', '.add-to-cart', function () {
+                let product = $(this).data('product');
+                let button = $(this);
 
+                $.get(`/cart/${product}/add`, function (data, status) {
+                    let res = JSON.parse(data);
+                    if (res.status === 'success') {
+                        button.removeClass('btn-primary');
+                        button.removeClass('add-to-cart');
+                        button.addClass('btn-success');
+                        button.find('.cart-text').text('Added to Cart');
+
+                        if (res.action === 'added') {
+                            let cart = $(".cart-counter");
+                            let old_count = cart.text();
+                            let new_count = parseInt(old_count) + 1;
+                            cart.html(new_count);
+
+                        }
+                    }
                 });
 
 

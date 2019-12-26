@@ -63,6 +63,18 @@ class User extends Authenticatable
             ->paginate(15);
     }
 
+    public function totalPosts()
+    {
+        return $this->hasMany(Post::class);
+    }
+
+    public function activePosts()
+    {
+        return $this->hasMany(Post::class)
+            ->where('status', '=', 1)
+            ->where('expire_date', '>=', Carbon::now());
+    }
+
     public function userLogo()
     {
         return '/post/user/logo/' . $this->logo;
