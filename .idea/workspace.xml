@@ -1,27 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/resources/views/site/index.blade.php" line="41" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="c3451429-1b58-400f-86cd-9b7f75062dac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckRole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/dropify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jsscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/post/images/ddfc5120-27b7-11ea-a321-7595b07a719a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/post/images/thumb/ddfc5120-27b7-11ea-a321-7595b07a719a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/post/user/logo/23f18fc0-24d9-11ea-b904-37fa75426182.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/customers/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/customers/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/inc/login-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/user/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/ad/12/ad12003b06e9973ae306ea4711b252716bc26c79" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/e7/3c/e73c69877085e6227aa79ec27fb037fc48fb20e8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/M0pKlIjV7Yv9idz1PLpZB25QWBh942YbnuOGQfSd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/TMkLtXdGB3Udjv7BlKKdXKqJTwGrkXuAvRhHguaV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/aAMpTlVrZQGcOXZr2dJhG8wuxkgumFqjYFXBRlHj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/cVIU4b2ekWy76SZBCGXI5XrmV5ydfkUih7OCnztV" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/hRV9Hfm80hjHCBdpWX6ep72ZGbYFJ0Ki11PE3qwQ" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/k5JfWhJNTGqKGNIMkt5Db0VSBmmGGFJ9l5Uv14PL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/2d7850ed152e37ad925e676c64e8866ffcf9c195.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/2eee69fe3f6b9f01455351ca4b9c43b25963e441.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/be4937687f245946f0703eae12005ceb34876a63.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-12-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-12-26.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nosmercado.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nosmercado.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Click.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Click.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/MailToPostAuthor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/MailToPostAuthor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Option.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Option.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PostImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PostImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/hashing.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_07_151043_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_07_151043_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/owl.theme.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/owl.carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/old-mail-to-post-author.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/old-mail-to-post-author.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/site/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/site/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/MIK9eWWQOUKRTvbVD2VWc493PRRTp24ddx3LhpZq" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/OSQubzQ5Ojv4YReliE2PR89FMWevQepebirmg66S" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/aQbTfeEz9oNBaPQaDBm30AW9WfTzobRlPkNtpyRU" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/uoRjuTsBZHqlFWYMlwBgUdwXrBZKffaWBXcDsdoY" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2019-10-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-10-29.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/post/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/post/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/post/post-not-found.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/post-not-found.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/post/successfully-deleted.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/successfully-deleted.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/10jwEiI8JT16GZowT7gCPSQJ5tWtj7jPfzDC3Dho" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/53046ca58ff1a54b138affacfb8b0e8a92a04ace.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/53046ca58ff1a54b138affacfb8b0e8a92a04ace.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/63eb120e073ae427b637701e0b40b33c70c458b2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/63eb120e073ae427b637701e0b40b33c70c458b2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/67cd96da83a0d507f3da5936d4219c20650b61dc.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/67cd96da83a0d507f3da5936d4219c20650b61dc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6d6ccd379d9e7f47cf7c1fc4c2af62ed319d1c38.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6d6ccd379d9e7f47cf7c1fc4c2af62ed319d1c38.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6ebdece6d1d2f5221cd499140839d9d7265f7f75.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6ebdece6d1d2f5221cd499140839d9d7265f7f75.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/8739fff9ef5e442905dfd38a9b6f83a827a7ee15.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/8739fff9ef5e442905dfd38a9b6f83a827a7ee15.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/93df4762b7a5b13e1422b6c7c1a854e05d45fda1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/93df4762b7a5b13e1422b6c7c1a854e05d45fda1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9bbe024d6189b35e628c0d3eb1ea9a1230e2b0f7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9bbe024d6189b35e628c0d3eb1ea9a1230e2b0f7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9c2920d957246b6e8fd5bce0e4fbaa4ede3f44fe.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/9c2920d957246b6e8fd5bce0e4fbaa4ede3f44fe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a5b6e8031604303cf004ee58f26c2c1c358c7138.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a5b6e8031604303cf004ee58f26c2c1c358c7138.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/aaad70992932926d13b0eb59b9038b5317d254a7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/aaad70992932926d13b0eb59b9038b5317d254a7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c1e6a72a623e00e00c11e64d2c7ea2ccc78500f6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c1e6a72a623e00e00c11e64d2c7ea2ccc78500f6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c5a62d948c3792352dea1ca4042f6e375871c6ec.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/c5a62d948c3792352dea1ca4042f6e375871c6ec.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d86b08318abda6d69f9834af113c15b10b2a0e50.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d86b08318abda6d69f9834af113c15b10b2a0e50.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,87 +148,16 @@
       <executable />
     </execution>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="blade" />
+        <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>:hover</find>
-      <find>.shorting-menu ul ul li a</find>
-      <find>postImageSlider</find>
-      <find>phone</find>
-      <find>150px</find>
-      <find>Cate</find>
-      <find>mail</find>
-      <find>search</find>
-      <find>create</find>
-      <find>Plaa</find>
-      <find>prodcto</find>
-      <find>header_top_button</find>
-      <find>allCategory</find>
-      <find>sendm</find>
-      <find>paginate</find>
-      <find>paginate`</find>
-      <find>filerPosts</find>
-      <find>pu</find>
-      <find>Bus</find>
-      <find>Crea advertencia</find>
-      <find>info@nosmercado.com</find>
-      <find>sortiasortia</find>
-      <find>sortia</find>
-      <find>fas fa-mobile-alt</find>
-      <find>.product_overview_content</find>
-      <find>form</find>
-      <find>sub</find>
-      <find>deletePost</find>
-      <find>&lt;form</find>
-      <find>@endsection</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/resources/views/layout/short.blade.php" />
-        <option value="$PROJECT_DIR$/app/SubCategory.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/layout/old-mail-to-post-author.blade.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/157c668c88fb6af1e0eec118ed774095326b4168.php" />
-        <option value="$PROJECT_DIR$/app/Option.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_07_151043_create_posts_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/post/delete.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_25_080530_create_options_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Category.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/admin/layout.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_10_08_125730_create_post_images_table.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/responsive.css" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/resources/views/site/post/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/app/Post.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/post/create.blade.php" />
-      </list>
-    </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -210,84 +254,25 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
-      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="529" />
-    <option name="y" value="-22" />
-    <option name="width" value="1270" />
-    <option name="height" value="1087" />
-  </component>
   <component name="ProjectId" id="1SCNcvGvfzCxxZqkb9UK2JB8IMK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nosmercado" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nosmercado" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../danpanel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/site/user" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -301,33 +286,33 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\resources\views\site\post" />
-      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\resources\views\layout" />
-      <recent name="C:\xampp\htdocs\fiverr\nosmercado\resources\views\site\post" />
-      <recent name="C:\xampp\htdocs\fiverr\nosmercado\database\factories" />
-      <recent name="C:\xampp\htdocs\fiverr\nosmercado\public\assets" />
+      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\resources\views\site\user" />
+      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\public\post\images\thumb" />
+      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\public\post\images" />
+      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\resources\views\admin\customers" />
+      <recent name="C:\xampp\htdocs\projects\fiverr\nosmercado\resources\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\fiverr\nosmercado\public\assets" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -374,37 +359,25 @@
       <workItem from="1572424746458" duration="55000" />
       <workItem from="1572439673086" duration="2340000" />
       <workItem from="1572498909693" duration="35000" />
+      <workItem from="1572514492449" duration="45000" />
+      <workItem from="1572962259707" duration="10544000" />
+      <workItem from="1573047272462" duration="93000" />
+      <workItem from="1573063838688" duration="1049000" />
+      <workItem from="1573315051329" duration="776000" />
+      <workItem from="1573375015849" duration="602000" />
+      <workItem from="1573400664696" duration="616000" />
+      <workItem from="1576480413561" duration="7300000" />
+      <workItem from="1576503520152" duration="9582000" />
+      <workItem from="1576566216302" duration="607000" />
+      <workItem from="1576585941853" duration="1233000" />
+      <workItem from="1576588631866" duration="622000" />
+      <workItem from="1577029451427" duration="4926000" />
+      <workItem from="1577089379912" duration="19000" />
+      <workItem from="1577110973090" duration="264000" />
+      <workItem from="1577116959913" duration="25000" />
+      <workItem from="1577347580459" duration="680000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53632000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32708332" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.36852396" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32355815" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -415,12 +388,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -441,216 +409,31 @@
       </map>
     </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_07_151043_create_posts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/post/delete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2296">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_25_080530_create_options_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Option.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1353">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-678">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/post/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/MailToPostAuthor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2378">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/mail-to-post-author.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8651">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19885">
-          <caret line="485" selection-start-line="485" selection-end-line="485" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1148">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_10_08_125730_create_post_images_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/b0f50210-f8d1-11e9-abcb-310eabafd54c.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/98203600-f985-11e9-9b11-7f3552f065b9.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/598059c0-fa75-11e9-979d-47cf99723ead.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/8ed13af0-f985-11e9-9a40-4b630f7aeaa6.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/628647d0-fa78-11e9-88de-817158fdeb82.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/75a051a0-fa78-11e9-b7b9-197a86deab20.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/e2f30a70-fa78-11e9-928b-552fcff8a9c6.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/c99405a0-fa78-11e9-8742-efdd1532bb97.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/e2f30a70-fa78-11e9-928b-552fcff8a9c6.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53997">
-          <caret line="1317" column="1" selection-start-line="1317" selection-start-column="1" selection-end-line="1317" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="36" column="110" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/post/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/post/images/7ae22820-fac7-11e9-a325-af6062beb2c2.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/7c0e6230-fa79-11e9-be76-7750ca3f63a7.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/7c2dc580-fa79-11e9-a756-0d252681be4c.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/041d0510-fac5-11e9-bbea-df4953841401.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/464ddbd0-fa79-11e9-a6ac-0597360ebca9.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/65782a10-fac5-11e9-93c6-9fb2750e076d.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/7ae22820-fac7-11e9-a325-af6062beb2c2.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/7c0e6230-fa79-11e9-be76-7750ca3f63a7.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/7c2dc580-fa79-11e9-a756-0d252681be4c.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/464ddbd0-fa79-11e9-a6ac-0597360ebca9.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/041d0510-fac5-11e9-bbea-df4953841401.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/4672a9b0-fa79-11e9-8eb0-5d6a78e5423f.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/65782a10-fac5-11e9-93c6-9fb2750e076d.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/4672a9b0-fa79-11e9-8eb0-5d6a78e5423f.png" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/3d68fa60-fac8-11e9-be2c-b1fdb6fa0e60.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/3d68fa60-fac8-11e9-be2c-b1fdb6fa0e60.jpeg" />
-    <entry file="file://$PROJECT_DIR$/public/post/images/thumb/a51f18e0-fac7-11e9-b404-b336e58dbb45.jpeg" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11275">
-          <caret line="284" column="40" selection-start-line="284" selection-start-column="40" selection-end-line="284" selection-end-column="40" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="9" column="1" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/post/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="249" selection-start-line="249" selection-end-line="249" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/master-layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1577032296041">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1577032296041" />
+    <state x="795" y="460" key="NewPhpFileDialog" timestamp="1577034355046">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="795" y="460" key="NewPhpFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1577034355046" />
+    <state width="506" height="446" key="SwitcherDM" timestamp="1577347934696">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="506" height="446" key="SwitcherDM/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1577347934696" />
+    <state width="506" height="446" key="SwitcherDM/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576519572467" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1576521533520">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1576521533520" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1577348304815">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1577348304815" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576519335939" />
   </component>
 </project>

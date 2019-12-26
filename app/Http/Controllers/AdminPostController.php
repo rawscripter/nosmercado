@@ -24,12 +24,12 @@ class AdminPostController extends Controller
         $post->status = 0;
         $post->save();
 
-        return redirect()->back()->withSuccess('Post has been Archived');
+        return redirect()->back()->withSuccess('Advertencia a wordo poni den archivo');
     }  public function postActive(Request $request, Post $post)
     {
         $post->status = 1;
         $post->save();
 
-        return redirect()->back()->withSuccess('Post has been Active');
+        return redirect()->back()->withSuccess('Advertencia a wordo activa');
     }
 }

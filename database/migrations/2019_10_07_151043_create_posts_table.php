@@ -27,6 +27,8 @@ class CreatePostsTable extends Migration
             $table->integer('clicks')->default(0);
             $table->integer('status')->default(1);
             $table->timestamp('expire_date')->nullable();
+            $table->timestamp('priority')->default(0);
+            $table->timestamp('user_id')->nullable();
             $table->timestamps();
         });
     }

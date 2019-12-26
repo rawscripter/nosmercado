@@ -17,9 +17,11 @@ Route::get('/sub-category/{category}/{subCategory}/posts', 'SiteController@subCa
 Route::get('/categories/tur-advertencia/posts', 'SiteController@allCategoryProducts')->name('all.category.products');
 Route::get('/search', 'SiteController@postSearch')->name('post.search');
 Route::get('/filer/{category?}/{sub-category?}', 'SiteController@filerPosts')->name('filter.posts');
-Route::get('/post/create', 'PostController@create')->name('post.create');
 Route::get('/post/{post}/details', 'PostController@show');
-Route::post('/post/store', 'PostController@store')->name('post.store');
+
+
+Route::get('/post/create', 'PostController@create')->name('post.create')->middleware('auth');
+Route::post('/post/store', 'PostController@store')->name('post.store')->middleware('auth');
 
 //for shorting
 Route::get('/ca/{category?}/{subCategory?}', 'SiteController@shortProducts')->name('short.products');
@@ -32,12 +34,26 @@ Route::post('/post/update/{uuid}', 'PostController@updatePost')->name('post.upda
 //for check if mail is working or not
 Route::get('/sendMail/{post}', 'PostController@sendMail');
 
+Route::get('/home', 'HomeController@home');
 
 // routes for admin dashboard
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/home', 'HomeController@index')->name('admin.home');
+
+
+Route::group(['middleware' => ['auth', 'role:customer']], function () {
+    Route::get('/user/posts', 'CustomerController@posts')->name('customer.posts');
+    Route::get('/user/profile', 'CustomerController@profile')->name('customer.profile');
+    Route::post('/user/{user}/profile/update', 'CustomerController@update')->name('customer.profile.update');
+
+});
+Route::group(['middleware' => ['auth', 'role:admin']], function () {
     Route::get('/admin', 'HomeController@index')->name('admin.home');
+    Route::get('/admin/loin/as/{user}', 'HomeController@loginAsCustomer')->name('admin.login.as.customer');
+
     Route::get('/admin/posts', 'AdminPostController@index')->name('admin.posts');
+    Route::get('/admin/customers', 'CustomerController@index')->name('admin.customers');
+    Route::get('/admin/customer/create', 'CustomerController@create')->name('admin.customer.create');
+    Route::post('/admin/customer/store', 'CustomerController@store')->name('admin.customer.store');
+    Route::delete('/admin/customer/{user}/destroy', 'CustomerController@destroy')->name('admin.customer.destroy');
     Route::get('/admin/archive/posts', 'AdminPostController@archivePosts')->name('admin.archive.posts');
     Route::get('/admin/{post}/archive', 'AdminPostController@postArchive')->name('admin.post.archive');
     Route::get('/admin/{post}/active', 'AdminPostController@postActive')->name('admin.post.active');

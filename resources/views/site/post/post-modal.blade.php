@@ -1,1 +1,248 @@
-<div class="modal fade" id="product_overview_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"     aria-hidden="true">    <div id="modal" class="modal-dialog" role="document">        <div class="modal-content">            <div class="modal-header">                <h5 class="modal-title text-center" id="exampleModalLabel">{{$post->title}} (#{{$post->id}})</h5>                <button type="button" class="close" data-dismiss="modal" aria-label="Close">                    <span aria-hidden="true">&times;</span>                </button>            </div>            <div class="modal-body">                <div id="postImageSlider" class="carousel slide" data-ride="carousel">                    <div class="carousel-inner">                        @php                            $i= 1;                        @endphp                        @foreach($post->images as $image)                            <div class="carousel-item {{$i == 1 ? 'active' : ''}}">                                <img src="/post/images/{{$image->name}}" style="max-width: 100%" alt="images">                            </div>                            @php                                $i++;                            @endphp                        @endforeach                    </div>                    <!-- Left and right controls -->                    <a class="carousel-control-prev" href="#postImageSlider" data-slide="prev">                        <span class="carousel-control-prev-icon"></span>                    </a>                    <a class="carousel-control-next" href="#postImageSlider" data-slide="next">                        <span class="carousel-control-next-icon"></span>                    </a>                </div>                <div class="product_overview_content pb-3">                    <br>                    <p>{{$post->description}}</p>                    <br>                    <h4>                        <div style="float:left;width:50%;">                            {{$post->price}} florin                        </div>                        <div style="float:left;width:50%;">                            <i class="fas fa-mobile-alt"></i>                            {{$post->phone}}                        </div>                    </h4>                    @if(!empty($post->link))                        <div class="m-3">                            <a href="{{$post->link}}" target="_blank" class="btn btn-primary">Website di bendedo</a>                        </div>                    @endif                </div>            </div>        </div>    </div></div>
+<div class="modal fade" id="product_overview_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+
+     aria-hidden="true">
+
+
+    <div id="modal" class="modal-dialog" role="document">
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+
+                <h5 class="modal-title text-center" id="exampleModalLabel">
+
+
+                    @php
+
+
+
+                        $to = Carbon\Carbon::now();
+
+
+
+                        $from = $post->created_at;
+
+
+
+                        $diff_in_minutes = $to->diffInMinutes($from);
+
+
+
+                        if ($diff_in_minutes == 1){
+
+                            echo ($diff_in_minutes . " minuut pasa...");
+
+                        }
+
+                        elseif ($diff_in_minutes > 1 and $diff_in_minutes < 60 ) {
+
+                            echo ($diff_in_minutes . " minuut pasa...");
+
+                        }
+
+
+
+                        elseif ($diff_in_minutes >= 60 and $diff_in_minutes < 120){
+
+                            $hours = 1;
+
+                            echo ($hours . " ora pasa...");
+
+                        }
+
+                        elseif ($diff_in_minutes >= 120 and $diff_in_minutes < 1440){
+
+                            $hours = round($diff_in_minutes*0.0166667);
+
+                            echo ($hours . " ora pasa...");
+
+                        }
+
+
+
+                        elseif ($diff_in_minutes >= 1440 and $diff_in_minutes < 2880){
+
+                            $days = 1;
+
+                            echo ($days . " dia pasa...");
+
+                        }
+
+
+
+                        else {
+
+                            $days = round($diff_in_minutes*0.000694444);
+
+                            echo ($days . " dia pasa..." );
+
+                        }
+
+
+
+
+
+                    @endphp
+
+
+                </h5> <!-- (#{{$post->id}}) {{$post->title}} #{{$post->id}} -->
+
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+                    <span aria-hidden="true">&times;</span>
+
+
+                </button>
+
+
+            </div>
+
+
+            <div class="modal-body">
+
+
+                <div id="postImageSlider" class="carousel slide" data-ride="carousel">
+
+
+                    <div class="carousel-inner">
+
+
+                        @php
+
+
+
+                            $i= 1;
+
+
+
+                        @endphp
+
+
+
+                        @foreach($post->images as $image)
+
+
+
+                            <div class="carousel-item {{$i == 1 ? 'active' : ''}}">
+
+
+                                <img src="/post/images/{{$image->name}}" style="max-width: 100%" alt="images">
+
+
+                            </div>
+
+
+
+                            @php
+
+
+
+                                $i++;
+
+
+
+                            @endphp
+
+
+
+                        @endforeach
+
+
+                    </div>
+
+
+                    <!-- Left and right controls -->
+
+
+                    <a class="carousel-control-prev" href="#postImageSlider" data-slide="prev">
+
+
+                        <span class="carousel-control-prev-icon"></span>
+
+
+                    </a>
+
+
+                    <a class="carousel-control-next" href="#postImageSlider" data-slide="next">
+
+
+                        <span class="carousel-control-next-icon"></span>
+
+
+                    </a>
+
+
+                </div>
+
+
+                <div class="product_overview_content pb-3">
+
+
+                    <br>
+                    <p>{{$post->description}}</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <h4 class="mb-0"><i class="fas fa-mobile-alt"></i> Afl. {{$post->price}} </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            @if(!empty($post->user_id))
+                                <div class="m-3">
+                                    <img style="max-width: 200px" src="{{$post->user->userLogo()}}" alt="">
+                                </div>
+                            @endif
+                        </div>
+                        <div class="col-md-4">
+                            <a style="color:black;" href="tel:{{$post->phone}}"> {{$post->phone}} </a>
+                        </div>
+                    </div>
+
+
+                    @if(!empty($post->link))
+
+                        <div class="m-3">
+
+                            <a href="{{$post->link}}" target="_blank" class="btn btn-primary">{{$post->link}}</a>
+
+                        </div>
+
+                    @endif
+
+
+
+
+
+                    @auth()
+                        @if($post->user_id === auth()->user()->id)
+                            <div>
+                                <a href="{{route('post.update.email.url',$post->uuid)}}"> <i
+                                        class="fas fa-edit btn btn-primary editBtn"></i></a>
+
+                                <a onClick="return confirm('Are you sure you want to delete the post?')"
+                                   href="{{route('confirm.delete.post',$post->uuid)}}"><i
+                                        class="fas fa-trash-alt btn btn-danger dltBtn"></i></a>
+                            </div>
+                        @endif
+                    @endauth
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>

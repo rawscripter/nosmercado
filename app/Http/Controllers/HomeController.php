@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Click;
 use App\Post;
+use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -35,5 +37,22 @@ class HomeController extends Controller
             ->get()
             ->count();
         return view('home', compact('totalPosts', 'activePosts', 'totalVisitors', 'totalClicks'));
+    }
+
+    public function home()
+    {
+        if (auth()->user()->role == 'customer') {
+            return redirect()->route('customer.posts');
+        }
+
+        if (auth()->user()->role == 'admin') {
+            return redirect('/admin');
+        }
+    }
+
+    public function loginAsCustomer(User $user)
+    {
+        Auth::login($user);
+        return redirect('/home');
     }
 }
