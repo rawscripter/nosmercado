@@ -1912,7 +1912,7 @@ p.view_product_details {
 
 div.scrollmenu {
     background-color: white;
-    overflow: unset;
+    overflow: auto;
     white-space: nowrap;
     padding: 15px;
     margin-left: -15px;

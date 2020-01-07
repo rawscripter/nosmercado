@@ -2,49 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3451429-1b58-400f-86cd-9b7f75062dac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/post/images/c4f61340-2800-11ea-a542-a9200f6d709e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/post/images/thumb/c4f61340-2800-11ea-a542-a9200f6d709e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/site/cart/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/P5D32o4pF5bjdM1Ks0xjYrrTmDEyr59GQau0dZIN" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/WMsbolyZUx46BsxGO3b9Rcdq01yO5DCgwV5aCm9i" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/fkax8Lihs3m14HhMP4O5wsljdTceCATzvRGNoXhq" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/34f500ca78a731ede9fa98545448120c21b42813.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/83b43b00-27b8-11ea-a5b1-e5e610c51230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/post/images/thumb/83b43b00-27b8-11ea-a5b1-e5e610c51230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/customers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customers/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/post/post-modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/user/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/M0pKlIjV7Yv9idz1PLpZB25QWBh942YbnuOGQfSd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/TMkLtXdGB3Udjv7BlKKdXKqJTwGrkXuAvRhHguaV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/aAMpTlVrZQGcOXZr2dJhG8wuxkgumFqjYFXBRlHj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/cVIU4b2ekWy76SZBCGXI5XrmV5ydfkUih7OCnztV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/hRV9Hfm80hjHCBdpWX6ep72ZGbYFJ0Ki11PE3qwQ" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/k5JfWhJNTGqKGNIMkt5Db0VSBmmGGFJ9l5Uv14PL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/2eee69fe3f6b9f01455351ca4b9c43b25963e441.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/2eee69fe3f6b9f01455351ca4b9c43b25963e441.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/63eb120e073ae427b637701e0b40b33c70c458b2.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/63eb120e073ae427b637701e0b40b33c70c458b2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/93df4762b7a5b13e1422b6c7c1a854e05d45fda1.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/93df4762b7a5b13e1422b6c7c1a854e05d45fda1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a5b6e8031604303cf004ee58f26c2c1c358c7138.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a5b6e8031604303cf004ee58f26c2c1c358c7138.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/aaad70992932926d13b0eb59b9038b5317d254a7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/aaad70992932926d13b0eb59b9038b5317d254a7.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel-2019-12-26.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel-2019-12-26.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +249,9 @@
       <workItem from="1577371149140" duration="2336000" />
       <workItem from="1577376207850" duration="11000" />
       <workItem from="1577377288511" duration="1407000" />
-      <workItem from="1577378770033" duration="1393000" />
+      <workItem from="1577378770033" duration="2035000" />
+      <workItem from="1577385036905" duration="35000" />
+      <workItem from="1577464698520" duration="15000" />
     </task>
     <servers />
   </component>
