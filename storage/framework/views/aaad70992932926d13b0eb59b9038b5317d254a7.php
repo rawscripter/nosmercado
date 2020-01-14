@@ -64,7 +64,7 @@
                         </div>
 
 
-                        <h4 class="text-center">Crea advertencia</h4>
+                        <h4 class="text-center">Create New Post</h4>
 
 
                         <form action="#" method="post" id="post_form"
@@ -108,7 +108,7 @@
                             <div class="form-group">
                                 <input type="text" required maxlength="20" name="title" class="form-control rounded-0"
                                        id="title"
-                                       placeholder="Titulo di e advertencia">
+                                       placeholder="Titulo">
                             </div>
 
                             <!-- -->
@@ -166,7 +166,7 @@
                                           style="border-radius:5px;"
 
 
-                                          placeholder="Describi e producto of servicio"></textarea>
+                                          placeholder="Describi e producto"></textarea>
 
 
                             </div>
@@ -223,18 +223,7 @@
                                 <div class="row">
 
 
-                                    <div class="col-md-8">
-
-
-                                        <p>Atencion: pa por edit of delete e advertencia
-
-                                            please wak den bo confirmation email.</p>
-
-
-                                    </div>
-
-
-                                    <div class="col-md-4 text-right">
+                                    <div class="col-md-12 text-right">
 
                                         <input type="submit" class="btn submitButton btn-primary">
 

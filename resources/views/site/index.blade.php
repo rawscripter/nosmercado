@@ -21,13 +21,10 @@
 
 
                         <div class="container">
-
-
                             <div class="shorting-menu">
-
                                 <div class="scrollmenu">
 
-                                    <a href="{{route('all.category.products')}}">Tur Advertencia</a>
+                                    <a href="{{route('all.category.products')}}">Shop</a>
 
 
                                     @php
@@ -226,26 +223,25 @@
 
                         <div class="home_page_product d-flex">
                             @foreach($posts as $post)
-                                <div class="product_single view_product_details">
+                                <div class="product_single view_product_details post-details-ajax-request"
+                                     data-id="{{$post->id}}">
                                     <img src="{{$post->fistImage()}}">
                                     <div class="product_single_shadow">
-                                        @auth()
-                                            @if($post->user_id === auth()->user()->id)
-                                                <div class="hide-in-desktop">
-                                                    <a href="{{route('post.update.email.url',$post->uuid)}}"> <i
-                                                            class="fas fa-edit btn btn-primary editBtn"></i></a>
+                                        {{--                                        @auth()--}}
+                                        {{--                                            @if($post->user_id === auth()->user()->id)--}}
+                                        {{--                                                <div class="hide-in-desktop">--}}
+                                        {{--                                                    <a href="{{route('post.update.email.url',$post->uuid)}}"> <i--}}
+                                        {{--                                                            class="fas fa-edit btn btn-primary editBtn"></i></a>--}}
 
-                                                    <a onClick="return confirm('Are you sure you want to delete the post?')"
-                                                       href="{{route('confirm.delete.post',$post->uuid)}}"><i
-                                                            class="fas fa-trash-alt btn btn-danger dltBtn"></i></a>
-                                                </div>
-                                            @endif
-                                        @endauth
-                                        <p class="view_product_details post-details-ajax-request"
-                                           data-id="{{$post->id}}">
+                                        {{--                                                    <a onClick="return confirm('Are you sure you want to delete the post?')"--}}
+                                        {{--                                                       href="{{route('confirm.delete.post',$post->uuid)}}"><i--}}
+                                        {{--                                                            class="fas fa-trash-alt btn btn-danger dltBtn"></i></a>--}}
+                                        {{--                                                </div>--}}
+                                        {{--                                            @endif--}}
+                                        {{--                                        @endauth--}}
+                                        <p class="view_product_details">
                                             <i
-                                                class="fas fa-eye"></i>{{$post->clicks}} <span
-                                                class="hide-in-desktop"><br>Details</span></p>
+                                                class="fas fa-eye"></i>{{$post->clicks}}</p>
                                     </div>
                                 </div>
                             @endforeach
@@ -357,7 +353,7 @@
 
     <script>
         $(document).ready(function () {
-            $(document).on('click', '.view_product_details.post-details-ajax-request', function () {
+            $(document).on('click', '.post-details-ajax-request', function () {
                     let item = $(this).data('id');
 
                     $.get(`/post/${item}/details`, function (data, status) {
@@ -388,7 +384,7 @@
                             let cart = $(".cart-counter");
                             let old_count = cart.text();
                             let new_count = parseInt(old_count) + 1;
-                            cart.html(new_count);
+                            $("#lblCartCount").html(new_count);
 
                         }
                     }

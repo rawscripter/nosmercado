@@ -31,7 +31,7 @@ class User extends Authenticatable
 
 
     protected $fillable = [
-        'name', 'email', 'password', 'role', 'phone', 'address', 'logo'
+        'name', 'email', 'password', 'role', 'phone', 'address', 'logo', 'slug'
     ];
     /**
      * The attributes that should be hidden for arrays.
@@ -58,7 +58,7 @@ class User extends Authenticatable
     public function posts()
     {
         return Post
-            ::where('user_id', '=', auth()->user()->id)
+            ::where('user_id', '=', $this->id)
             ->orderBy('created_at', 'desc')
             ->paginate(15);
     }

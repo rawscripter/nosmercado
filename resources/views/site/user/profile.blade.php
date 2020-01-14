@@ -47,7 +47,7 @@
                                 <label for="">Logo:</label>
                                 <input type="file" name="logo" class="dropify">
                                 <div class="text-center">
-                                    <img src="{{auth()->user()->userLogo()}}" alt="">
+                                    <img style="max-width: 100%" src="{{auth()->user()->userLogo()}}" alt="">
                                 </div>
                             </div>
 
@@ -114,7 +114,7 @@
                     success: function (response) {
                         Swal.fire(
                             'Pabien!',
-                            'Bo advertencia to online.',
+                            'Profile updated.',
                             'success',
                             "#000000"
                         );

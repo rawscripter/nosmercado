@@ -69,42 +69,22 @@
 
 
     <style>
-
-
         button.swal2-confirm.swal2-styled {
-
-
             color: #fff;
-
-
             background-color: #2b62d9;
-
-
             border-color: #2b62d9;
-
-
         }
-
 
         #post_form {
-
             border: none;
-
         }
-
 
         label {
-
             display: inline-block;
-
             position: relative;
-
             height: auto;
-
             width: auto;
-
         }
-
 
         @media (max-width: 720px) {
 
@@ -113,12 +93,7 @@
                 flex-direction: column;
 
             }
-
         }
-
-
-
-
     </style>
 
 
@@ -135,14 +110,8 @@
 
 
     <header class="header_area">
-
-
         <div class="header_top">
-
-
             <div id="no-padding" class="container-fluid">
-
-
                 <div class="row">
                     <div class="col-md-9 col-lg-9">
 
@@ -151,126 +120,50 @@
 
 
                             <div class="col-md-6 col-lg-4">
-
-
                                 <div class="menu_btn">
-
-
                                     <span class="open_nave_btn" style="color:white" onclick="">&#9776;</span>
                                     <!-- openNav() -->
-
-
                                 </div>
-
-
                                 <div class="header-logo">
-
-
                                     <h4 class="text-center"><a href="/">
-
-
                                             <img src="{{asset('images/logo.png')}}" id="logo" alt="Nosmercado">
-
-
                                         </a></h4>
-
-
                                 </div>
-
-
                                 <div class="header_top_button_mobile">
-
                                     @include('layout.inc.login-menu')
-
                                 </div>
-
-
                             </div>
-
-
                             <div class="col-md-6 col-lg-8">
-
-
                                 <div class="main_search mt-0 mb-2"
                                      style="border: 1px solid #ced4da;border-radius: 5px;">
-
-
                                     <form action="{{route('post.search')}}" method="get">
-
-
                                         <div class="input-group">
-
-
                                             <button type="submit" class="btn rounded-0 pl-3 pr-3"><i
-
-
                                                     class="fas fa-search"></i></button>
-
-
                                             <input type="text" class="form-control rounded-0" name="query"
-
                                                    style="border: 1px solid transparent; !important"
-
                                                    placeholder="Busca algo..."
-
                                                    value="{{isset($_GET['query']) ? $_GET['query']:'' }}">
-
-
                                             <span class="input-group-btn">
-
 								</span>
-
-
                                         </div>
-
-
                                     </form>
-
-
                                 </div>
-
-
                             </div>
-
-
                         </div>
-
-
                     </div>
                     <div class="col-md-3 col-lg-3">
                         <div class="header_top_button">
-                            {{--                            <a href="{{route('post.create')}}"--}}
-                            {{--                               style="font-size:medium;margin-top: -.04rem !important;padding: 0.4rem .5rem !important;"--}}
-                            {{--                               class="btn btn-primary">--}}
-                            {{--                                <i style="margin-right: 5px;" class="fas fa-plus fa-lg"></i> Crea advertencia--}}
-                            {{--                            </a>--}}
                             @include('layout.inc.login-menu')
-
+                            @include('layout.inc.cart',['cartClass'=>'for-desktop'])
                         </div>
-
-
                     </div>
 
-
                 </div>
-
             </div>
-
-            <div class="cart">
-                <a href="/cart">
-                    <i class="fa" style="font-size:24px">&#xf07a;</i>
-                    <span class='badge badge-success cart-counter' id='lblCartCount'>
-                    @if(session('cart'))
-                            {{count(session('cart'))}}
-                        @else
-                            {{'0'}}
-                        @endif
-                </span>
-                </a>
-            </div>
-
         </div>
 
+        @include('layout.inc.cart',['cartClass'=>'for-mobile'])
         <div class="main_menu">
 
 

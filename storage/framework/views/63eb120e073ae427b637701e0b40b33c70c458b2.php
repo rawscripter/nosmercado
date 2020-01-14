@@ -17,13 +17,10 @@
 
 
                         <div class="container">
-
-
                             <div class="shorting-menu">
-
                                 <div class="scrollmenu">
 
-                                    <a href="<?php echo e(route('all.category.products')); ?>">Tur Advertencia</a>
+                                    <a href="<?php echo e(route('all.category.products')); ?>">Shop</a>
 
 
                                     <?php
@@ -223,26 +220,25 @@
 
                         <div class="home_page_product d-flex">
                             <?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <div class="product_single view_product_details">
+                                <div class="product_single view_product_details post-details-ajax-request"
+                                     data-id="<?php echo e($post->id); ?>">
                                     <img src="<?php echo e($post->fistImage()); ?>">
                                     <div class="product_single_shadow">
-                                        <?php if(auth()->guard()->check()): ?>
-                                            <?php if($post->user_id === auth()->user()->id): ?>
-                                                <div class="hide-in-desktop">
-                                                    <a href="<?php echo e(route('post.update.email.url',$post->uuid)); ?>"> <i
-                                                            class="fas fa-edit btn btn-primary editBtn"></i></a>
+                                        
+                                        
+                                        
+                                        
+                                        
 
-                                                    <a onClick="return confirm('Are you sure you want to delete the post?')"
-                                                       href="<?php echo e(route('confirm.delete.post',$post->uuid)); ?>"><i
-                                                            class="fas fa-trash-alt btn btn-danger dltBtn"></i></a>
-                                                </div>
-                                            <?php endif; ?>
-                                        <?php endif; ?>
-                                        <p class="view_product_details post-details-ajax-request"
-                                           data-id="<?php echo e($post->id); ?>">
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <p class="view_product_details">
                                             <i
-                                                class="fas fa-eye"></i><?php echo e($post->clicks); ?> <span
-                                                class="hide-in-desktop"><br>Details</span></p>
+                                                class="fas fa-eye"></i><?php echo e($post->clicks); ?></p>
                                     </div>
                                 </div>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -356,7 +352,7 @@
 
     <script>
         $(document).ready(function () {
-            $(document).on('click', '.view_product_details.post-details-ajax-request', function () {
+            $(document).on('click', '.post-details-ajax-request', function () {
                     let item = $(this).data('id');
 
                     $.get(`/post/${item}/details`, function (data, status) {
@@ -387,7 +383,7 @@
                             let cart = $(".cart-counter");
                             let old_count = cart.text();
                             let new_count = parseInt(old_count) + 1;
-                            cart.html(new_count);
+                            $("#lblCartCount").html(new_count);
 
                         }
                     }

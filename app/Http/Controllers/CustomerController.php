@@ -6,6 +6,7 @@ use App\Image;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use Webpatser\Uuid\Uuid;
 
 class CustomerController extends Controller
@@ -32,6 +33,7 @@ class CustomerController extends Controller
         ]);
         $user = User::create([
             'name' => $data['name'],
+            'slug' => Str::slug($data['name']),
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
@@ -44,11 +46,25 @@ class CustomerController extends Controller
         return redirect()->back()->withMessage('Customer has been Deleted.');
     }
 
-    public function posts()
+    public function posts($shop = null)
     {
-        $user = auth()->user();
-        $posts = $user->posts();
-        return view('site.index', compact('posts'));
+        if ($shop != null) {
+            $user = User::where('slug', $shop)->first();
+        } else {
+            if (auth()) {
+                $user = auth()->user();
+            } else {
+                $user = null;
+            }
+        }
+        if ($user) {
+            $posts = $user->posts();
+            return view('site.index', compact('posts'));
+        } else {
+            return redirect(route('home'));
+        }
+
+
     }
 
     public function profile()

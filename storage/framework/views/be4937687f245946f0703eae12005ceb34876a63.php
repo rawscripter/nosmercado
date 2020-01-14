@@ -1,6 +1,4 @@
 <?php $__env->startSection('header'); ?>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/basic.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
     <link rel="stylesheet" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('body'); ?>
@@ -50,7 +48,7 @@
                                 <label for="">Logo:</label>
                                 <input type="file" name="logo" class="dropify">
                                 <div class="text-center">
-                                    <img src="<?php echo e(auth()->user()->userLogo()); ?>" alt="">
+                                    <img style="max-width: 100%" src="<?php echo e(auth()->user()->userLogo()); ?>" alt="">
                                 </div>
                             </div>
 
@@ -97,7 +95,6 @@
     </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('footer'); ?>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
     <script>

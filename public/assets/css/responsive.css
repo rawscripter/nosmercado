@@ -168,6 +168,10 @@
 
     }
 
+    #cartPage{
+        max-width: 90%;
+    }
+
 
 }
 
@@ -279,9 +283,6 @@
 
     }
 
-    .hide-in-desktop {
-        display: none;
-    }
 
     .show-in-mobile {
         display: block;
@@ -295,36 +296,44 @@
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 890px) {
+    .hide-in-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
 
 
     .header_top_button {
-
-
         display: none;
-
-
     }
-
 
     .header_top_button_mobile {
-
-
         position: absolute;
-
-
         top: 0;
-
-
         right: 18px;
-
-
         display: block;
-
-
     }
 
+    .cart.for-mobile {
+        position: absolute;
+        top: 20px;
+        margin: 0px;
+        margin-top: -5px;
+    }
 
+    a.btn.btn-primary.login-btn {
+        padding: 5px 8px;
+    }
+
+    .product_overview_content .col-md-4 {
+        padding: 0px;
+    }
+
+    .custom-mt-5 {
+        margin-top: 20px;
+    }
 }
 
 
@@ -344,18 +353,6 @@
 
 
     #no-padding {
-
-
-        padding-left: 0 !important;
-
-
-        padding-right: 0 !important;
-
-
-    }
-
-
-    #no-padding .col-md-6 {
 
 
         padding-left: 0 !important;
@@ -613,18 +610,62 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 320px) {
+    img#logo {
+        width: 80px;
+    }
+
+    .header_top_button_mobile a.btn.btn-primary {
+        padding: 0.2rem .2rem !important;
+    }
+}
+
+@media (max-width: 360px) {
+    img#logo {
+        width: 80px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    img#logo {
+        width: 70px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header_top_button_mobile {
+        right: -358px;
+    }
+    .main_search.mt-0.mb-2 {
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 766px) {
+    .header_top_button_mobile {
+        right: 18px;
+    }
 
     .justify-content-around {
-
         flex-direction: column;
-
     }
 
     .cart {
         left: 15px;
     }
 
+    #no-padding .col-md-6 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 
+    .cart.for-desktop {
+        display: none;
+    }
+
+    .cart.for-mobile {
+        display: block;
+    }
 }
-

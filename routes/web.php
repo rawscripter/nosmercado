@@ -23,6 +23,9 @@ Route::get('/cart', 'CartController@index');
 Route::get('/cart/{post}/add', 'CartController@addToCart');
 Route::get('/cart/{post}/remove', 'CartController@removeFromCart')->name('remove.from.cart');
 
+Route::patch('update-cart', 'CartController@updateCart');
+Route::delete('remove-from-cart', 'CartController@removeFromCart');
+
 
 Route::get('/post/create', 'PostController@create')->name('post.create')->middleware('auth');
 Route::post('/post/store', 'PostController@store')->name('post.store')->middleware('auth');
@@ -43,8 +46,10 @@ Route::get('/home', 'HomeController@home');
 // routes for admin dashboard
 
 
+Route::get('/shop/{user?}', 'CustomerController@posts')->name('customer.posts');
+
 Route::group(['middleware' => ['auth', 'role:customer']], function () {
-    Route::get('/user/posts', 'CustomerController@posts')->name('customer.posts');
+
     Route::get('/user/profile', 'CustomerController@profile')->name('customer.profile');
     Route::post('/user/{user}/profile/update', 'CustomerController@update')->name('customer.profile.update');
 

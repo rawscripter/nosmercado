@@ -1864,8 +1864,6 @@ a.loginLink {
 
 p.view_product_details {
     width: 100%;
-    background: #0000001a;
-    padding: 10px;
 }
 
 .dropdown-toggle {
@@ -1878,10 +1876,13 @@ p.view_product_details {
 
 
 .cart {
-    position: absolute;
-    top: 20px;
-    right: 40px;
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*right: 40px;*/
+    padding: 10px;
+    margin-left: 35px;
 }
+
 
 .cart i.fa {
     font-size: 25px;
@@ -1947,4 +1948,34 @@ div.scrollmenu a {
 div#modal {
     width: 100% !important;
     max-width: fit-content !important;
+}
+
+.header_top_button {
+    display: inline-flex;
+}
+
+.login-btn {
+    line-height: 30px;
+}
+
+.cart.for-mobile {
+    display: none;
+}
+
+div#modal {
+    margin: 0 auto;
+}
+
+
+.btn.btn-primary {
+    max-height: 40px !important;
+    line-height: 25px;
+}
+.cart.for-desktop {
+    position: relative;
+}
+span#lblCartCount {
+    position: absolute;
+    top: 5px;
+    right: 0px;
 }
